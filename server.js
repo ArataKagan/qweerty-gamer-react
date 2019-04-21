@@ -7,9 +7,9 @@ const path = require('path');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.use("/", (req, res, next) => {
-    res.send("Welcome to Qweerty Gamers");
-})
+// app.use("/", (req, res, next) => {
+//     res.send("Welcome to Qweerty Gamers");
+// })
 
 // app.get('/api/hello', (req, res) => {
 //     res.send({express: 'Hello from Express'});
