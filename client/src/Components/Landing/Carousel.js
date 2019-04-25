@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'nuka-carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Slider extends Component {
     render() {
