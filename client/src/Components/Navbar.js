@@ -29,7 +29,7 @@ class Navigation extends Component {
     render() {
         return (
             <div>
-                <Navbar color="light" light expand="md">
+                <Navbar color="dark" light expand="md">
                 <NavbarBrand href="/"><img src={require("./qg_logo_png.png")} alt="logo" width='200px'/></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
