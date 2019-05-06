@@ -38,7 +38,7 @@ class Navigation extends Component {
                             <NavLink href="/components/">Event</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">About</NavLink>
+                            <NavLink href="/about">About</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/components/">Blog</NavLink>
