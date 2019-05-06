@@ -35,22 +35,22 @@ class Navigation extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Event</NavLink>
+                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Event</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/about">About</NavLink>
+                            <NavLink href="/about" style={{color: '#f1f1f1'}}>About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">Blog</NavLink>
+                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Blog</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">Shopping</NavLink>
+                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Shopping</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">Donate</NavLink>
+                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Donate</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">Contact Us</NavLink>
+                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Contact Us</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
