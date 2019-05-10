@@ -25,12 +25,11 @@
 
 .newsArticles > div {
   margin: 50px;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
 }
 
 a {
-  color: inherit;
   font-family: "Times New Roman";
 }
 

@@ -26,7 +26,12 @@ class Navigation extends Component {
             isOpen: !this.state.isOpen
         });
     }
+
+    
     render() {
+        const navColor = {
+            color: '#f1f1f1'
+        }
         return (
             <div>
                 <Navbar color="dark" light expand="md">
@@ -35,22 +40,22 @@ class Navigation extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Event</NavLink>
+                            <NavLink href="/components/" style={navColor}>Event</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/about" style={{color: '#f1f1f1'}}>About</NavLink>
+                            <NavLink href="/about" style={navColor}>About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Blog</NavLink>
+                            <NavLink href="/components/" style={navColor}>Blog</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Shopping</NavLink>
+                            <NavLink href="/components/" style={navColor}>Shopping</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Donate</NavLink>
+                            <NavLink href="/components/" style={navColor}>Donate</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/" style={{color: '#f1f1f1'}}>Contact Us</NavLink>
+                            <NavLink href="/components/" style={navColor}>Contact Us</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
