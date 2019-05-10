@@ -18,3 +18,20 @@
   color: white;
 }
 
+.newsArticles {
+  background-color: gray;
+  color: white;
+}
+
+.newsArticles > div {
+  margin: 50px;
+  font-size: 30px;
+  color: white;
+}
+
+a {
+  color: inherit;
+  font-family: "Times New Roman";
+}
+
+
