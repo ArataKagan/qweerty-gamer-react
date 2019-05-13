@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import {Navbar, Nav, Form, FormControl, Button}  from 'react-bootstrap';
+
 import {
     Collapse,
     Navbar,
@@ -57,17 +59,11 @@ class Navigation extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink href="/components/" style={navColor}>Contact Us</NavLink>
-                        </NavItem>
-                        <NavItem>
-                        <FontAwesomeIcon icon="coffee" />
-                        </NavItem>
-                        
+                        </NavItem>    
                     </Nav>
                     
                 </Collapse>
-                </Navbar>
-                
-               
+                </Navbar>             
             </div>
         );
     }

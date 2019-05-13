@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Navigation from './Components/Navbar';
+import NavbarTop from './Components/Navbar-top';
 import './App.css';
 import Landing from './Components/Landing/Landing';
 import About from './Components/About/About';
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div className='App'>
         <nav>
+          <NavbarTop />
           <Navigation />
         </nav>
         <main>
