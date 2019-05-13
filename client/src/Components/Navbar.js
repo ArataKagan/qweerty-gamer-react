@@ -33,11 +33,11 @@ class Navigation extends Component {
     
     render() {
         const navColor = {
-            color: '#f1f1f1'
+            color: 'black'
         }
         return (
             <div>
-                <Navbar color="dark" light expand="md">
+                <Navbar style={{backgroundColor: '#f1f1f1'}} light expand="md">
                 <NavbarBrand href="/"><img src={require("./qg_logo_png.png")} alt="logo" width='200px'/></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
