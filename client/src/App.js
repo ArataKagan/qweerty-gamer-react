@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Navigation from './Components/Navbar';
 import NavbarTop from './Components/Navbar-top';
+import Footer from './Components/Footer';
 import './App.css';
 import Landing from './Components/Landing/Landing';
 import About from './Components/About/About';
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path='/' component={ Landing } />
           <Route path='/about' component={ About } />
         </main>
+        <Footer />
       </div>
     );
   }
