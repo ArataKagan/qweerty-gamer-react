@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Navigation from './Components/Navbar';
-import NavbarTop from './Components/Navbar-top';
-import Footer from './Components/Footer';
+import Navigation from './Components/Navbar/navbar';
+import NavbarTop from './Components/Navbar/navbar-top';
+import Footer from './Components/Footer/footer';
 import './App.css';
-import Landing from './Components/Landing/Landing';
-import About from './Components/About/About';
+import Landing from './Components/Landing/landing';
+import About from './Components/About/about';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
@@ -24,6 +24,7 @@ class App extends Component {
           <Route exact path='/' component={ Landing } />
           <Route path='/about' component={ About } />
         </main>
+        
         <Footer />
       </div>
     );
