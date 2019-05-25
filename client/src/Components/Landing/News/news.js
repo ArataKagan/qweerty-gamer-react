@@ -54,13 +54,41 @@ class News extends Component {
             this.state.news ?
             <div className="newsArticles"> 
             <TextLoop>
-                <div><a href={url[0]} style={anchorStyle}>{title[0]}</a> {author[0]}</div>
-                <div><a href={url[1]} style={anchorStyle}>{title[1]}</a> {author[1]}</div>
-                <div><a href={url[2]} style={anchorStyle}>{title[2]}</a> {author[2]}</div>
-                <div><a href={url[3]} style={anchorStyle}>{title[3]}</a> {author[3]}</div>
-                <div><a href={url[4]} style={anchorStyle}>{title[4]}</a> {author[4]}</div>
-                <div><a href={url[5]} style={anchorStyle}>{title[5]}</a> {author[5]}</div>
-                <div><a href={url[6]} style={anchorStyle}>{title[6]}</a> {author[6]}</div>
+                <div className="d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight"><a href={url[0]} style={anchorStyle}>{title[0]}</a></div>
+                    <div className="p-2 bd-highlight">{author[0]}</div>
+                </div>
+
+                <div className="d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight"><a href={url[1]} style={anchorStyle}>{title[1]}</a></div> 
+                    <div className="p-2 bd-highlight">{author[1]}</div>
+                </div>
+
+                <div className="d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight"><a href={url[2]} style={anchorStyle}>{title[2]}</a></div>
+                    <div className="p-2 bd-highlight">{author[2]}</div> 
+                </div>
+
+                <div className="d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight"><a href={url[3]} style={anchorStyle}>{title[3]}</a></div> 
+                    <div className="p-2 bd-highlight">{author[3]}</div>
+                </div>
+
+                <div className="d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight"><a href={url[4]} style={anchorStyle}>{title[4]}</a></div> 
+                    <div className="p-2 bd-highlight">{author[4]}</div>
+                </div>
+
+                <div className="d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight"><a href={url[5]} style={anchorStyle}>{title[5]}</a></div> 
+                    <div className="p-2 bd-highlight">{author[5]}</div>
+                </div>
+
+                <div className="d-flex flex-column bd-highlight mb-3">
+                   <div className="p-2 bd-highlight"><a href={url[6]} style={anchorStyle}>{title[6]}</a></div> 
+                   <div className="p-2 bd-highlight">{author[6]}</div>
+                </div>
+
             </TextLoop> </div> : null
         )
     }
