@@ -1,0 +1,14 @@
+.nav-item {
+    font-family: "Courier";
+}
+
+.social-icon {
+    margin-right: 10px;
+}
+
+.nav-top {
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(black, gray);
+}

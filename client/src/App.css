@@ -34,18 +34,6 @@
   color: white;
 }
 
-.navbar-top {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navbar-top > p {
-  margin-bottom: 0px;
-  margin-right: 25px;
-}
-
 .footer {
   
 }

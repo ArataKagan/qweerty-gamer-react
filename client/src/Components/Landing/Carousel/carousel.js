@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Slider extends Component {
     render() {
         var carouselStyle = {
-            padding: '20px'
+            padding: '80px'
         }
         return (
             <div className='carousel' style={carouselStyle}>

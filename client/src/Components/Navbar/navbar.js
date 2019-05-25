@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faMeetup } from '@fortawesome/free-brands-svg-icons'
+import styles from './navbar.module.css';
 // import {Navbar, Nav, Form, FormControl, Button}  from 'react-bootstrap';
 
 import {
@@ -42,24 +44,33 @@ class Navigation extends Component {
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                        <NavItem>
+                        <NavItem className={styles['nav-item']}>
                             <NavLink href="/components/" style={navColor}>Event</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className={styles['nav-item']}>
                             <NavLink href="/about" style={navColor}>About</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className={styles['nav-item']}>
                             <NavLink href="/components/" style={navColor}>Blog</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className={styles['nav-item']}>
                             <NavLink href="/components/" style={navColor}>Shopping</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className={styles['nav-item']}>
                             <NavLink href="/components/" style={navColor}>Donate</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className={styles['nav-item']}>
                             <NavLink href="/components/" style={navColor}>Contact Us</NavLink>
-                        </NavItem>    
+                        </NavItem> 
+                        <NavItem className={styles['social-icon']}>
+                            <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#191970" /></a>
+                        </NavItem> 
+                        <NavItem className={styles['social-icon']}>
+                            <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#00BFFF" /></a>
+                        </NavItem> 
+                        <NavItem className={styles['social-icon']}>
+                            <FontAwesomeIcon icon={faMeetup} size="2x" color="red"/>
+                        </NavItem>   
                     </Nav>
                     
                 </Collapse>
