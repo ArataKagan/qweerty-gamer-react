@@ -4,7 +4,7 @@ import Navigation from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 import './App.css';
 import Landing from './components/Landing/landing';
-import About from './components/about';
+import About from './components/About/about';
 
 class App extends Component {
   render() {
