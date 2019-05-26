@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Navigation from './Components/Navbar/navbar';
-import Footer from './Components/Footer/footer';
+import Navigation from './components/Navbar/navbar';
+import Footer from './components/Footer/footer';
 import './App.css';
-import Landing from './Components/landing';
-import About from './Components/about';
+import Landing from './components/landing';
+import About from './components/about';
 
 class App extends Component {
   render() {
