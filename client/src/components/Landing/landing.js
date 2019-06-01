@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Slider from './carousel';
-import News from './news';
+import Slider from './Carousel/carousel';
+import News from './News/news';
 
 class Landing extends Component {
     render() {
