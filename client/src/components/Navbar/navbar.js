@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faMeetup } from '@fortawesome/free-brands-svg-icons'
 import styles from './navbar.module.css';
+// import logo_image from './../../assets/images/qg_logo_png.png';
 // import {Navbar, Nav, Form, FormControl, Button}  from 'react-bootstrap';
 
 import {
@@ -40,7 +41,7 @@ class Navigation extends Component {
         return (
             <div>
                 <Navbar style={{backgroundColor: '#f1f1f1'}} light expand="md">
-                <NavbarBrand href="/"><img src={require("./../qg_logo_png.png")} alt="logo" width='200px'/></NavbarBrand>
+                <NavbarBrand href="/"><img src={require('./../../assets/images/qg_logo_png.png')} alt="logo" width='200px'/></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
