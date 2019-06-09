@@ -1,34 +1,22 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
 
-class Card extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {flipped: false};
-        this.flip = this.flip.bind(this);
-    }
+export default function FullWidthGrid(){
 
-    flip = () => {
-        this.setState({
-            flipped: !this.state.flipped
-        });
-    }
-    render(){
-        return(
-            <div 
-                onMouseEnter={this.flip}
-                onMouseLeave={this.flip} 
-                className={"card-container" + (this.state.flipped ? "flipped" : "")}
-            >
-                <Front />
-                <Back />
-            </div>
-        )
-    }
-}
-
-class Front extends React.Component {
-    render(){
-        <div className="front">
+    return(
+        <div>
+            <Grid item xs={6} sm={3}>
+                <Card>Hello</Card>
+            </Grid>
+            <Grid item xs={6} sm={3}>
+                <Card>Hello</Card>
+            </Grid>
+            <Grid item xs={6} sm={3}>
+                <Card>Hello</Card>
+            </Grid>
         </div>
-    }
+
+    )
 }
+
