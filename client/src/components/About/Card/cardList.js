@@ -11,7 +11,7 @@ class CardList extends Component {
                     {CardData.map((item, index) => {
                     return(
                         <Grid item xs>
-                            <Card style={{ padding: 60, margin: 20, backgroundColor: "#F0EAD6", color: "gray"}}>
+                            <Card style={{ padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
                             {item.title}
                             </Card>
                         </Grid>
