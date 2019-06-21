@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slider from './Carousel/carousel';
 import News from './News/news';
+import Advertisement from './Advertisement/advertisement';
 
 class Landing extends Component {
     render() {
@@ -9,6 +10,7 @@ class Landing extends Component {
                 
                <Slider />
                <News />
+               <Advertisement />
             </div>
         )
     }

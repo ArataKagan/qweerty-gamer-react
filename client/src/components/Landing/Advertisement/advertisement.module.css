@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    height: 80vh;
+    background-image: linear-gradient(
+        to right bottom ,
+         rgba(255, 255, 207, 0.804),
+          #EAD1A1),
+        url(./qg-member-pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
