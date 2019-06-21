@@ -19,9 +19,9 @@
   background-image: linear-gradient(black, gray);
 }
 
-.ml-auto {
+/* .ml-auto {
   color: white;
-}
+} */
 
 .newsArticles {
   background-color: gray;
@@ -32,6 +32,32 @@
   margin: 50px;
   font-size: 20px;
   color: white;
+}
+
+.ad-main {
+    position: relative;
+    height: 80vh;
+    background-image: linear-gradient(
+        to right bottom ,
+         rgba(255, 255, 207, 0.804),
+          #EAD1A1),
+        url(./assets/images/qg-member-pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.ad-main p {
+  display: block;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+
 }
 
 
