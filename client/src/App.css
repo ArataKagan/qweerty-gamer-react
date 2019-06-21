@@ -16,7 +16,6 @@
 
 .carousel {
   padding: 10px, 60px, 10px, 60px;
-  background-image: linear-gradient(black, gray);
 }
 
 /* .ml-auto {
@@ -25,18 +24,18 @@
 
 .newsArticles {
   position: relative;
-  background-color: gray;
   background-position: center;
-  color: white;
+  color: black;
   height: 30vh;
 
 }
 
 .newsArticles > div {
+  font-family: 'Open Sans', sans-serif;
   position: absolute;
   margin: 50px;
   font-size: 20px;
-  color: white;
+  color: black;
   top: 30%;
   left: 45%;
   transform: translate(-50%, -45%);

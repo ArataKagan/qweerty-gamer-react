@@ -36,7 +36,7 @@ class News extends Component {
         }
 
         const anchorStyle= {
-            color: 'white',
+            color: 'black',
             fontSize: '30px'
         }
 
