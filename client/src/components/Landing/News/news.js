@@ -28,16 +28,6 @@ class News extends Component {
         const url = [];
         const author = [];
         
-
-        // const Container = styled.div`
-        //     border: 1px solid red;
-        //     position: relative;
-        //     overflow: hidden;
-        //     width: 300px;
-        //     height: 150px;
-        //     `;
-        // const CarouselUI = ({ children }) => <Container>{children}</Container>
-        // const Carousel = makeCarousel(CarouselUI);
         
         for(let i=0; this.state.news.length > i; i++){
             author.push(this.state.news[i].author);

@@ -24,14 +24,22 @@
 } */
 
 .newsArticles {
+  position: relative;
   background-color: gray;
+  background-position: center;
   color: white;
+  height: 30vh;
+
 }
 
 .newsArticles > div {
+  position: absolute;
   margin: 50px;
   font-size: 20px;
   color: white;
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -45%);
 }
 
 .ad-main {
@@ -57,7 +65,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)
-
 }
 
 
