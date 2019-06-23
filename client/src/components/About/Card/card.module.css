@@ -1,0 +1,12 @@
+.card-outer {
+    padding: 30px;
+}
+
+
+.card {
+    padding: 60; 
+    margin: 20; 
+    background-color: "#BCBCBE"; 
+    color: "white";
+}
+
