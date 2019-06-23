@@ -36,11 +36,11 @@ class Navigation extends Component {
     
     render() {
         const navColor = {
-            color: 'black'
+            color: '#feda6a'
         }
         return (
             <div>
-                <Navbar style={{backgroundColor: '#f1f1f1'}} light expand="md">
+                <Navbar style={{backgroundColor: '#1d1e22'}} light expand="md">
                 <NavbarBrand href="/"><img src={require('./../../assets/images/qg_logo_png.png')} alt="logo" width='200px'/></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
@@ -64,13 +64,13 @@ class Navigation extends Component {
                             <NavLink href="/components/" style={navColor}>Contact Us</NavLink>
                         </NavItem> 
                         <NavItem className={styles['social-icon']}>
-                            <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#191970" /></a>
+                            <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#feda6a" /></a>
                         </NavItem> 
                         <NavItem className={styles['social-icon']}>
-                            <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#00BFFF" /></a>
+                            <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#feda6a" /></a>
                         </NavItem> 
                         <NavItem className={styles['social-icon']}>
-                            <FontAwesomeIcon icon={faMeetup} size="2x" color="red"/>
+                            <FontAwesomeIcon icon={faMeetup} size="2x" color="#feda6a"/>
                         </NavItem>   
                     </Nav>
                     

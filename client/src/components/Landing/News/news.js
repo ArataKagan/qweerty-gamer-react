@@ -4,6 +4,7 @@ import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
 import TextLoop from 'react-text-loop';
 import styled, { css } from 'styled-components';
+import style from './news.module.css';
 
 class News extends Component {
     constructor(props){
@@ -15,7 +16,7 @@ class News extends Component {
 
   
     componentDidMount(){
-        axios.get('https://newsapi.org/v2/everything?q=lgbt&apiKey=e89e81f136f343719303e1f4d0fdf9c6')
+        axios.get('https://newsapi.org/v2/everything?domains=polygon.com,ign.com,kotaku.com,gamespot.com?language=en&apiKey=e89e81f136f343719303e1f4d0fdf9c6')
             .then(response => {
                 this.setState({
                     news: response.data.articles
@@ -36,13 +37,13 @@ class News extends Component {
         }
 
         const anchorStyle= {
-            color: 'black',
+            color: 'white',
             fontSize: '25px'
         }
 
         return(
             this.state.news ?
-            <div className="newsArticles"> 
+            <div className={style['newsArticles']}> 
             <TextLoop>
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <div className="p-2 bd-highlight"><a href={url[0]} style={anchorStyle}>{title[0]}</a></div>

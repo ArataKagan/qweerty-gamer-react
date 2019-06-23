@@ -9,6 +9,6 @@
 .nav-top {
     display: flex;
     padding: 10px;
-    color: white;
+    color: #feda6a;
     background-image: linear-gradient(black, gray);
 }
