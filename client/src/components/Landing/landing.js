@@ -3,7 +3,6 @@ import Slider from './Carousel/carousel';
 import LandingIntro from './LandingIntro/intro';
 import News from './News/news';
 import Advertisement from './Advertisement/advertisement';
-import style from './landing.module.css';
 
 class Landing extends Component {
     render() {
