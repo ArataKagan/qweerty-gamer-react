@@ -7,8 +7,11 @@ import style from './landing.module.css';
 
 class Landing extends Component {
     render() {
+        let inlineStyle = {
+            backgroundColor : '#1d1e22'
+        }
         return (
-            <div className={style['landing']}>
+            <div style={inlineStyle}>
                <Slider />
                <News />
         
