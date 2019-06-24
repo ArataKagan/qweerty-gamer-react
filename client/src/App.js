@@ -5,6 +5,7 @@ import Footer from './components/Footer/footer';
 import './App.css';
 import Landing from './components/Landing/landing';
 import About from './components/About/about';
+import Member from './components/About/Member/member';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <main>
           <Route exact path='/' component={ Landing } />
           <Route path='/about' component={ About } />
+          <Route path='/about/member' component={ Member } />
         </main>
         
         <Footer />

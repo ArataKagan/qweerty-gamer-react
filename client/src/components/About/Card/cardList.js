@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import {Grid, Card, CardActionArea, CardMedia, Typography} from '@material-ui/core';
+import {Grid, 
+        Card, 
+        Typography} from '@material-ui/core';
 import CardData from './card.json';
 import style from './card.module.css';
 import myImage from './qg-test.jpg';
+import { Link } from 'react-router-dom';
 
 class CardList extends Component {
     render(){
@@ -13,18 +16,13 @@ class CardList extends Component {
                     {CardData.map((item, index) => {
                     return(
                         <Grid item xs>
+                        <Link to="/about/member">
                             <Card style={{ padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
-                                <CardActionArea>
-                                    <CardMedia 
-                                        className="card-media"
-                                        image="/qg-test.jpg"
-                                        title="card-media"
-                                    />
-                                </CardActionArea>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     {item.title}
                               </Typography>
                             </Card>
+                        </Link>
                         </Grid>
                         ) 
                     })}

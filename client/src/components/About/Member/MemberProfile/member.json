@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "CEO/President",
+        "image": [
+            {"src": "/ray.JPG"}
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Web Developer",
+        "image": [
+            {"src": "/arata.jpg"}
+        ]
+    }
+]

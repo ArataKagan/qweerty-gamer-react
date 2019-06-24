@@ -46,22 +46,22 @@ class Navigation extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem className={styles['nav-item']}>
-                            <NavLink href="/components/" style={navColor}>Event</NavLink>
+                            <NavLink href="/" style={navColor}>Event</NavLink>
                         </NavItem>
                         <NavItem className={styles['nav-item']}>
                             <NavLink href="/about" style={navColor}>About</NavLink>
                         </NavItem>
                         <NavItem className={styles['nav-item']}>
-                            <NavLink href="/components/" style={navColor}>Blog</NavLink>
+                            <NavLink href="/" style={navColor}>Blog</NavLink>
                         </NavItem>
                         <NavItem className={styles['nav-item']}>
-                            <NavLink href="/components/" style={navColor}>Shopping</NavLink>
+                            <NavLink href="/" style={navColor}>Shopping</NavLink>
                         </NavItem>
                         <NavItem className={styles['nav-item']}>
-                            <NavLink href="/components/" style={navColor}>Donate</NavLink>
+                            <NavLink href="/" style={navColor}>Donate</NavLink>
                         </NavItem>
                         <NavItem className={styles['nav-item']}>
-                            <NavLink href="/components/" style={navColor}>Contact Us</NavLink>
+                            <NavLink href="/" style={navColor}>Contact Us</NavLink>
                         </NavItem> 
                         <NavItem className={styles['social-icon']}>
                             <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#feda6a" /></a>
