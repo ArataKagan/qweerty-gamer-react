@@ -14,9 +14,8 @@ class News extends Component {
                     }
         }
 
-  
     componentDidMount(){
-        axios.get('https://newsapi.org/v2/everything?domains=polygon.com,ign.com,kotaku.com,gamespot.com?language=en&apiKey=e89e81f136f343719303e1f4d0fdf9c6')
+        axios.get('https://newsapi.org/v2/everything?q=lgbt&apiKey=e89e81f136f343719303e1f4d0fdf9c6')
             .then(response => {
                 this.setState({
                     news: response.data.articles
@@ -36,47 +35,70 @@ class News extends Component {
             url.push(this.state.news[i].url);
         }
 
-        const anchorStyle= {
-            color: 'white',
-            fontSize: '25px'
-        }
-
         return(
             this.state.news ?
             <div className={style['newsArticles']}> 
             <TextLoop>
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <div className="p-2 bd-highlight"><a href={url[0]} style={anchorStyle}>{title[0]}</a></div>
+                    <div className={style['article']}>
+                        <div className="p-2 bd-highlight article">
+                            <a href={url[0]}>{title[0]}</a>
+                        </div>
+                    </div>
                     <div className="p-2 bd-highlight">{author[0]}</div>
                 </div>
 
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <div className="p-2 bd-highlight"><a href={url[1]} style={anchorStyle}>{title[1]}</a></div> 
+                    <div className={style['article']}>
+                        <div className="p-2 bd-highlight article">
+                            <a href={url[1]}>{title[1]}</a>
+                        </div> 
+                    </div>
                     <div className="p-2 bd-highlight">{author[1]}</div>
                 </div>
 
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <div className="p-2 bd-highlight"><a href={url[2]} style={anchorStyle}>{title[2]}</a></div>
+                    <div className={style['article']}>
+                        <div className="p-2 bd-highlight article">
+                            <a href={url[2]}>{title[2]}</a>
+                        </div>
+                    </div>
                     <div className="p-2 bd-highlight">{author[2]}</div> 
                 </div>
 
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <div className="p-2 bd-highlight"><a href={url[3]} style={anchorStyle}>{title[3]}</a></div> 
+                    <div className={style['article']}>
+                        <div className="p-2 bd-highlight article">
+                            <a href={url[3]}>{title[3]}</a>
+                        </div>
+                    </div> 
                     <div className="p-2 bd-highlight">{author[3]}</div>
                 </div>
 
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <div className="p-2 bd-highlight"><a href={url[4]} style={anchorStyle}>{title[4]}</a></div> 
+                    <div className={style['article']}>
+                        <div className="p-2 bd-highlight article">
+                            <a href={url[4]}>{title[4]}</a>
+                        </div>
+                    </div> 
                     <div className="p-2 bd-highlight">{author[4]}</div>
                 </div>
 
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <div className="p-2 bd-highlight"><a href={url[5]} style={anchorStyle}>{title[5]}</a></div> 
+                     <div className={style['article']}>
+                        <div className="p-2 bd-highlight article">
+                            <a href={url[5]}>{title[5]}</a>
+                        </div> 
+                     </div>
                     <div className="p-2 bd-highlight">{author[5]}</div>
                 </div>
 
                 <div className="d-flex flex-column bd-highlight mb-3">
-                   <div className="p-2 bd-highlight"><a href={url[6]} style={anchorStyle}>{title[6]}</a></div> 
+                    <div className={style['article']}>
+                        <div className="p-2 bd-highlight article">
+                            <a href={url[6]}>{title[6]}</a>
+                        </div>
+                    </div> 
                    <div className="p-2 bd-highlight">{author[6]}</div>
                 </div>
 
