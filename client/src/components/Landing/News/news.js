@@ -5,6 +5,7 @@ import Slide from 'react-reveal/Slide';
 import TextLoop from 'react-text-loop';
 import styled, { css } from 'styled-components';
 import style from './news.module.css';
+import MediaQuery from 'react-responsive'
 
 class News extends Component {
     constructor(props){
@@ -36,8 +37,9 @@ class News extends Component {
         }
 
         return(
+            <MediaQuery minDeviceWidth={600}>
             this.state.news ?
-            <div className={style['newsArticles']}> 
+            <div className={style['newsArticles']}>
             <TextLoop>
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <div className={style['article']}>
@@ -103,6 +105,7 @@ class News extends Component {
                 </div>
 
             </TextLoop> </div> : null
+            </MediaQuery>
         )
     }
 }

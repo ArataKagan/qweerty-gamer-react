@@ -1,0 +1,19 @@
+.privacy-policy-main {
+    background-color: #393f4d;
+    padding: 40px;
+}
+
+.h1 {
+    color: white;
+    padding: 30px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.privacy-policy-main h2 {
+    color: white;
+}
+
+.privacy-policy-main p {
+    color: white;
+}
+

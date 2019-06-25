@@ -15,14 +15,12 @@
     background-position: center;
     color: white;
     height: 30vh;
-  
   }
   
   .newsArticles > div {
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     margin: 50px;
-    color: white;
     top: 30%;
     left: 45%;
     transform: translate(-50%, -45%);
