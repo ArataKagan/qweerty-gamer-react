@@ -42,9 +42,9 @@ class News extends Component {
             <div className={style['newsArticles']}>
             <TextLoop>
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <div className={style['article']}>
+                    <div className={style['article']} style={{color: '#eee'}}>
                         <div className="p-2 bd-highlight article">
-                            <a href={url[0]}>{title[0]}</a>
+                            <a href={url[0]} className={style['article-post']}>{title[0]}</a>
                         </div>
                     </div>
                     <div className="p-2 bd-highlight">{author[0]}</div>
@@ -53,7 +53,7 @@ class News extends Component {
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <div className={style['article']}>
                         <div className="p-2 bd-highlight article">
-                            <a href={url[1]}>{title[1]}</a>
+                            <a href={url[1]} className={style['article-post']}>{title[1]}</a>
                         </div> 
                     </div>
                     <div className="p-2 bd-highlight">{author[1]}</div>
@@ -62,7 +62,7 @@ class News extends Component {
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <div className={style['article']}>
                         <div className="p-2 bd-highlight article">
-                            <a href={url[2]}>{title[2]}</a>
+                            <a href={url[2]} className={style['article-post']}>{title[2]}</a>
                         </div>
                     </div>
                     <div className="p-2 bd-highlight">{author[2]}</div> 
@@ -71,7 +71,7 @@ class News extends Component {
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <div className={style['article']}>
                         <div className="p-2 bd-highlight article">
-                            <a href={url[3]}>{title[3]}</a>
+                            <a href={url[3]} className={style['article-post']}>{title[3]}</a>
                         </div>
                     </div> 
                     <div className="p-2 bd-highlight">{author[3]}</div>
@@ -80,7 +80,7 @@ class News extends Component {
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <div className={style['article']}>
                         <div className="p-2 bd-highlight article">
-                            <a href={url[4]}>{title[4]}</a>
+                            <a href={url[4]} className={style['article-post']}>{title[4]}</a>
                         </div>
                     </div> 
                     <div className="p-2 bd-highlight">{author[4]}</div>
@@ -89,7 +89,7 @@ class News extends Component {
                 <div className="d-flex flex-column bd-highlight mb-3">
                      <div className={style['article']}>
                         <div className="p-2 bd-highlight article">
-                            <a href={url[5]}>{title[5]}</a>
+                            <a href={url[5]} className={style['article-post']}>{title[5]}</a>
                         </div> 
                      </div>
                     <div className="p-2 bd-highlight">{author[5]}</div>
@@ -98,7 +98,7 @@ class News extends Component {
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <div className={style['article']}>
                         <div className="p-2 bd-highlight article">
-                            <a href={url[6]}>{title[6]}</a>
+                            <a href={url[6]} className={style['article-post']}>{title[6]}</a>
                         </div>
                     </div> 
                    <div className="p-2 bd-highlight">{author[6]}</div>
