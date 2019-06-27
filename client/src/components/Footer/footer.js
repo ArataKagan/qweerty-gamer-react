@@ -38,11 +38,11 @@ class Footer extends Component {
                                 <div className="p-2 bd-highlight">Contact Us</div>
                             </div>
                       </div>
-                      <div className="col social-media">
+                      <div className="col social" style={{flex: 0, paddingTop: '20px'}}>
                             <div className="d-flex flex-column bd-highlight mb-3">
-                                <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#feda6a" /></a>
-                                <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#feda6a" /></a>
-                                <FontAwesomeIcon icon={faMeetup} size="2x" color="#feda6a"/>
+                                <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>
+                                <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#eee" /></a>
+                                <FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/>
                             </div>
                       </div>
                    </div>

@@ -8,8 +8,8 @@ row {
     padding: 30px;
 }
 
-container .social-media {
-    flex: 0 0 25em;
+.social-media {
+    flex: 0;
 }
 
 
