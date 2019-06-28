@@ -41,7 +41,7 @@ class Navigation extends Component {
         return (
             <div>
                 <Navbar style={{backgroundColor: '#1d1e22'}} light expand="md">
-                <NavbarBrand href="/"><img src={require('./../../assets/images/qg_logo_png.png')} alt="logo" width='200px'/></NavbarBrand>
+                <NavbarBrand href="/" className={styles['main-logo']}><img src={require('./../../assets/images/qg_logo_png.png')} alt="logo" width='200px'/></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
@@ -62,7 +62,8 @@ class Navigation extends Component {
                         </NavItem>
                         <NavItem className={styles['nav-item']}>
                             <NavLink href="/" style={navColor}>Contact Us</NavLink>
-                        </NavItem> 
+                        </NavItem>
+                        <div className="navbar-nav flex-row mb-2"> 
                         <NavItem className={styles['social-icon']}>
                             <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#feda6a" /></a>
                         </NavItem> 
@@ -71,12 +72,13 @@ class Navigation extends Component {
                         </NavItem> 
                         <NavItem className={styles['social-icon']}>
                             <FontAwesomeIcon icon={faMeetup} size="2x" color="#feda6a"/>
-                        </NavItem>   
+                        </NavItem>
+                        </div>
                     </Nav>
-                    
                 </Collapse>
-                </Navbar>             
+                </Navbar>
             </div>
+            
         );
     }
 }
