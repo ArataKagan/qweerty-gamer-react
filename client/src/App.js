@@ -18,7 +18,7 @@ class App extends Component {
         <main>
           <Route exact path='/' component={ Landing } />
           <Route path='/about' component={ About } />
-          <Route path='/about/member' component={ Member } />
+          <Route path='/member' component={ Member } />
           <Route path='/privacy-policy' component={ PrivacyPolicy } />
         </main>
         

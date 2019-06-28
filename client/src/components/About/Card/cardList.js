@@ -16,7 +16,7 @@ class CardList extends Component {
                     {CardData.map((item, index) => {
                     return(
                         <Grid item xs>
-                        <Link to="/about/member">
+                        <Link to="/member">
                             <Card style={{ padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     {item.title}
