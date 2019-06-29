@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from './Carousel/carousel';
-import News from './News/news';
+// import News from './News/news';
 import Advertisement from './Advertisement/advertisement';
 
 class Landing extends Component {
@@ -11,7 +11,6 @@ class Landing extends Component {
         return (
             <div style={inlineStyle}>
                <Slider />
-               <News />
                <Advertisement />
                
             </div>
