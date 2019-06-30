@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './about.module.css';
 import CardList from './Card/cardList';
 
-class About extends React.Component {
-    render(){
+function About(){
         return (
             <div className={styles['about-main']}>
                 <div className={styles['about-image']}>
@@ -15,7 +14,6 @@ class About extends React.Component {
                 </div>
             </div>
         )
-    }
 }
 
 export default About;
