@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Grid, 
         Card, 
         Typography} from '@material-ui/core';
-import CardData from './card.json';
 import style from './card.module.css';
 import myImage from './qg-test.jpg';
 import { Link } from 'react-router-dom';
@@ -13,19 +12,33 @@ class CardList extends Component {
         return(
             <div className={style['card-outer']}>
                 <Grid container>
-                    {CardData.map((item, index) => {
-                    return(
                         <Grid item xs>
-                        <Link to="/member">
-                            <Card style={{ padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    {item.title}
-                              </Typography>
-                            </Card>
-                        </Link>
+                            <Link to="/member">
+                                <Card style={{ minWidth: 275,padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <p>Member</p>
+                                    </Typography>
+                                </Card>
+                            </Link>
                         </Grid>
-                        ) 
-                    })}
+                        <Grid item xs>
+                            <Link to="#">
+                                <Card style={{ minWidth: 275, padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <p>Partner</p>
+                                    </Typography>
+                                </Card>
+                            </Link>
+                        </Grid>
+                        <Grid item xs>
+                            <Link to="#">
+                                <Card style={{ minWidth: 275, padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <p>Volunteer</p>
+                                    </Typography>
+                                </Card>
+                            </Link>
+                        </Grid>
                 </Grid>
             </div>
         )
