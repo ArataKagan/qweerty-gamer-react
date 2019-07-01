@@ -20,9 +20,16 @@ class MemberProfile extends Component {
                         return(
                             <Grid item xs>
                                 <Card style={{ padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
-                                    <img src={item.image} style={{width: '150px'}}/>
-                                    <p>{item.title}</p>
-                                    <p>{item.description}</p>
+                                    <div className='d-flex flex-row bd-highlight mb-3'>
+                                        <div>
+                                            <img src={item.image} style={{width: '150px'}}/>
+                                        </div>
+                                        <div>
+                                            <h3>{item.name}</h3>
+                                            <p >{item.title}</p>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    </div>
                                 </Card>
                             </Grid>
                         )
