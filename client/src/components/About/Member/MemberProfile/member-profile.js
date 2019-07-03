@@ -26,7 +26,7 @@ class MemberProfile extends Component {
                                         </div>
                                         <div>
                                             <h3>{item.name}</h3>
-                                            <p >{item.title}</p>
+                                            <h4 >{item.title}</h4>
                                             <p>{item.description}</p>
                                         </div>
                                     </div>
