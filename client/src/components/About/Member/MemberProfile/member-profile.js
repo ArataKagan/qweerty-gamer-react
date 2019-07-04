@@ -24,7 +24,7 @@ class MemberProfile extends Component {
                                         <div>
                                             <img src={item.image} style={{width: '150px'}}/>
                                         </div>
-                                        <div>
+                                        <div className='d-flex flex-column'>
                                             <h3>{item.name}</h3>
                                             <h4 >{item.title}</h4>
                                             <p>{item.description}</p>
