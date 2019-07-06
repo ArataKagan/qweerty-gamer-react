@@ -7,3 +7,18 @@
 .member-profile-main {
   padding: 60px;  
 }
+
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.head-shot-photo {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
