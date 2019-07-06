@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {Grid, 
-    Card, 
-    Typography} from '@material-ui/core';
 import memberData from './member-information.js';
+import style from '../member.module.css';
 
 class MemberProfile extends Component {
     constructor(props){
@@ -13,28 +11,21 @@ class MemberProfile extends Component {
     }
     render(){
         return(
-            <div>
-                <Grid container>
+            <div className={style['member-profile-main']}>
+            <div className='container'>
+            <div className='row justify-content-center'>
                     {
                         this.state.data.map((item, index) => {
                         return(
-                            <Grid item xs>
-                                <Card style={{ padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
-                                    <div className='d-flex flex-row bd-highlight mb-3'>
-                                        <div>
-                                            <img src={item.image} style={{width: '150px'}}/>
-                                        </div>
-                                        <div className='d-flex flex-column'>
-                                            <h3>{item.name}</h3>
-                                            <h4 >{item.title}</h4>
-                                            <p>{item.description}</p>
-                                        </div>
-                                    </div>
-                                </Card>
-                            </Grid>
+                            <div className='col-4'>
+                                <img src={item.image} style={{width: '150px'}}/>
+                                <p>{item.name}</p>
+                                <p>{item.title}</p>
+                            </div> 
                         )
                     })}
-                </Grid>
+                    </div>
+            </div>
             </div>
         )
     }
