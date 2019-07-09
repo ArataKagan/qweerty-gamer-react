@@ -1,11 +1,50 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import footerData from './footer-information';
 import styles from './footer.module.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faMeetup } from '@fortawesome/free-brands-svg-icons'
 
 class Footer extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            footerMenuData: footerData,
+            hover: null,
+            selectedMenu: null,
+            color: null
+        }
+    }
+
+    hoverOn(e){
+        console.log(e);
+        this.setState({
+            hover: true,
+            selectedMenu: e,
+            color: '#feda6a'
+        })
+    }
+
+    hoverOff(){
+        this.setState({
+            hover: false,
+            color: null
+        })
+    }
+
     render(){
+        const footerData = this.state.footerMenuData.map((item, index) => {
+            return(
+                <div 
+                    className="d-flex flex-column bd-highlight mb-3" 
+                    key={index}
+                    onMouseEnter={() => this.hoverOn(index)}
+                    onMouseLeave={() => this.hoverOff()}
+                    style={ this.state.hover? {'color': this.state.color} : null}>
+                    {item.name}
+                </div>
+            );
+        })
         return(
             <div className={styles['footer']}>
                 <div className="container">
@@ -26,12 +65,7 @@ class Footer extends Component {
                       </div>
                       <div className="col navigation">
                             <div className="d-flex flex-column bd-highlight mb-3">
-                                <div className="p-2 bd-highlight">Event</div>
-                                <div className="p-2 bd-highlight">About</div>
-                                <div className="p-2 bd-highlight">Blog</div>
-                                <div className="p-2 bd-highlight">Shopping</div>
-                                <div className="p-2 bd-highlight">Donate</div>
-                                <div className="p-2 bd-highlight">Contact Us</div>
+                                {footerData}
                             </div>
                       </div>
                       <div className="col social" style={{flex: 0, paddingTop: '20px'}}>
