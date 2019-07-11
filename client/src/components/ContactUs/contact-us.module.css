@@ -1,0 +1,10 @@
+.contact-us-image {
+    height: 40vh;
+    padding-top: 30px;
+    background-image:
+        linear-gradient(
+            to right bottom, #faebd723, #FFEBCD),
+            url(./contact-us-image.jpg);
+    background-size: cover;
+    background-position: center;
+}

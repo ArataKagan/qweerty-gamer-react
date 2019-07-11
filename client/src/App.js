@@ -6,6 +6,7 @@ import './App.css';
 import Landing from './components/Landing/landing';
 import About from './components/About/about';
 import Member from './components/About/Member/member';
+import ContactUs from './components/ContactUs/contact-us';
 import PrivacyPolicy from './components/Footer/PrivacyPolicy/privacy-policy';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path='/about' component={ About } />
           <Route path='/member' component={ Member } />
           <Route path='/privacy-policy' component={ PrivacyPolicy } />
+          <Route path='/contact-us' component={ ContactUs } />
         </main>
         
         <Footer />

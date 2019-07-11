@@ -61,7 +61,7 @@ class Navigation extends Component {
                             <NavLink href="/" style={navColor}>Donate</NavLink>
                         </NavItem>
                         <NavItem className={styles['nav-item']}>
-                            <NavLink href="/" style={navColor}>Contact Us</NavLink>
+                            <NavLink href="/contact-us" style={navColor}>Contact Us</NavLink>
                         </NavItem>
                         <div className="navbar-nav flex-row mb-2"> 
                         <NavItem className={styles['social-icon']}>
