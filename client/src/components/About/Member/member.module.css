@@ -4,6 +4,10 @@
     font-family: 'Archivo Black', sans-serif;
 }
 
+.row {
+    width: auto
+}
+
 .member-profile-main {
   padding: 60px;  
 }

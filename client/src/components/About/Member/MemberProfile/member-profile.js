@@ -47,13 +47,11 @@ class MemberProfile extends Component {
                     {
                         this.state.data.map((item, index) => {
                         return(
-                            <div className='col-4' key={index}>
-                                <img src={item.image} style={{width: '150px'}}/>
+                            <div className='row'>
+                            <div className='col-xs' key={index} style={{padding: '40px'}}>
+                                <img src={item.image} style={{maxWidth: '200px', height: '200px', objectFit: 'cover'}} onClick={() => this.handleShow(item)}/>
                                 <p>{item.name}</p>
                                 <p>{item.title}</p>
-                                <Button variant="outline-warning" onClick={() => this.handleShow(item)}>
-                                    Know More About Me
-                                </Button>
                                 {/* <MemberModal item={item} key={index} show={this.state.show} onHide={this.handleClose}/> */}
                                 <Modal size='lg' show={this.state.show} onHide={this.handleClose}>
                                     <Modal.Header closeButton>
@@ -63,7 +61,7 @@ class MemberProfile extends Component {
                                     </Modal.Header>
                                     <Modal.Body>
                                         <Container>
-                                            <Row className="show-grid">
+                                            {/* <Row className="show-grid">
                                                 <Col xs={12} md={8}>
                                                     {this.state.memberTitle}
                                                 </Col>
@@ -73,7 +71,20 @@ class MemberProfile extends Component {
                                                 <Col xs={12} md={8}>
                                                     <img src={this.state.memberImage} style={{width: '150px'}} />
                                                 </Col>
-                                            </Row>
+                                            </Row> */}
+                                            <div className="row">
+                                                <div className="col">
+                                                   <div style={{fontSize: '20px'}}>
+                                                      {this.state.memberTitle}
+                                                   </div>
+                                                   <div>
+                                                      {this.state.memberDescription}
+                                                   </div>
+                                                </div>
+                                                <div className="col">
+                                                    <img src={this.state.memberImage} style={{width: '300px', height:'auto'}} />
+                                                </div>
+                                            </div>
                                         </Container>
                                     </Modal.Body>
                                     <Modal.Footer>
@@ -83,6 +94,7 @@ class MemberProfile extends Component {
                                     </Modal.Footer>
                                 </Modal>
                             </div> 
+                            </div>
                         )
                     })}
                     </div>
