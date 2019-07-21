@@ -47,11 +47,11 @@ class MemberProfile extends Component {
                     {
                         this.state.data.map((item, index) => {
                         return(
-                            <div className='row'>
+                            <div className='row' key={index}>
                             <div className='col-xs' key={index} style={{padding: '40px'}}>
-                                <img src={item.image} style={{maxWidth: '200px', height: '200px', objectFit: 'cover'}} onClick={() => this.handleShow(item)}/>
-                                <p>{item.name}</p>
-                                <p>{item.title}</p>
+                                <img  key={index + 1} src={item.image} style={{maxWidth: '200px', height: '200px', objectFit: 'cover'}} onClick={() => this.handleShow(item)}/>
+                                <p key={index + 2}>{item.name}</p>
+                                <p key={index + 3}>{item.title}</p>
                                 {/* <MemberModal item={item} key={index} show={this.state.show} onHide={this.handleClose}/> */}
                                 <Modal size='lg' show={this.state.show} onHide={this.handleClose}>
                                     <Modal.Header closeButton>

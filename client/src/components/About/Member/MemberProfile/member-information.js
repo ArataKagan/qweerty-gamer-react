@@ -8,14 +8,14 @@ export default [
     },
     {
         id: 2,
-        name: "Chris",
+        name: "Chris Ruben Avila",
         title: "Staff Volunteer",
         description: "",
         image: require('./image/chris.jpg')
     },
     {
         id: 3,
-        name: "Kirby",
+        name: "Kirby Conner",
         title: "Staff Volunteer",
         description: "",
         image: require('./image/kirby.jpeg')
