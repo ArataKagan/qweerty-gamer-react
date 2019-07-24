@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faMeetup } from '@fortawesome/free-brands-svg-icons'
 import styles from './navbar.module.css';
-// import logo_image from './../../assets/images/qg_logo_png.png';
-// import {Navbar, Nav, Form, FormControl, Button}  from 'react-bootstrap';
 
 import {
     Collapse,
@@ -12,11 +10,8 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    NavLink 
+} from 'reactstrap';
 
 class Navigation extends Component {
     constructor(props) {
@@ -24,20 +19,37 @@ class Navigation extends Component {
 
         this.toggle = this.toggle.bind(this);
         this.state = {
+            isHover: false,
             isOpen: false
         };
     }
+
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
         });
     }
 
-    
+    // onMouseEnter = (e) => {
+    //    console.log('this is: ', e.target);
+    //    this.setState({
+    //        isHover: e.target
+    //    })
+    // } 
+
+    // onMouseLeave = () => {
+    //     console.log('mouse left')
+    //     this.setState({
+    //         isHover: false
+    //     })
+    // }
+
     render() {
-        const navColor = {
-            color: '#feda6a'
+
+        const navStyle = {
+            color: "#feda6a"
         }
+    
         return (
             <div>
                 <Navbar style={{backgroundColor: '#1d1e22'}} light expand="md">
@@ -45,24 +57,25 @@ class Navigation extends Component {
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                        <NavItem className={styles['nav-item']}>
-                            <NavLink href="/" style={navColor}>Event</NavLink>
-                        </NavItem>
-                        <NavItem className={styles['nav-item']}>
-                            <NavLink href="/about" style={navColor}>About</NavLink>
-                        </NavItem>
-                        <NavItem className={styles['nav-item']}>
-                            <NavLink href="/" style={navColor}>Blog</NavLink>
-                        </NavItem>
-                        <NavItem className={styles['nav-item']}>
-                            <NavLink href="/" style={navColor}>Shopping</NavLink>
-                        </NavItem>
-                        <NavItem className={styles['nav-item']}>
-                            <NavLink href="/" style={navColor}>Donate</NavLink>
-                        </NavItem>
-                        <NavItem className={styles['nav-item']}>
-                            <NavLink href="/contact-us" style={navColor}>Contact Us</NavLink>
-                        </NavItem>
+                            <NavItem>
+                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Event</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/about" style={navStyle} className={styles['nav-item']}>About</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Blog</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Shopping</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Donate</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/contact-us" style={navStyle} className={styles['nav-item']}>Contact Us</NavLink>
+                            </NavItem>
+                        
                         <div className="navbar-nav flex-row mb-2"> 
                         <NavItem className={styles['social-icon']}>
                             <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#feda6a" /></a>

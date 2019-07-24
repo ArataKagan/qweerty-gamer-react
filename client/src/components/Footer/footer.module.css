@@ -12,5 +12,8 @@ row {
     flex: 0;
 }
 
+.footer-list:hover {
+    color: gray !important;
+}
 
 

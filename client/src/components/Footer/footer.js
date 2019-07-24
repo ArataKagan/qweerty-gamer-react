@@ -9,38 +9,16 @@ class Footer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            footerMenuData: footerData,
-            hover: null,
-            selectedMenu: null,
-            color: null
+            footerMenuData: footerData
         }
-    }
-
-    hoverOn(e){
-        console.log(e);
-        this.setState({
-            hover: true,
-            selectedMenu: e,
-            color: '#feda6a'
-        })
-    }
-
-    hoverOff(){
-        this.setState({
-            hover: false,
-            color: null
-        })
     }
 
     render(){
         const footerData = this.state.footerMenuData.map((item, index) => {
             return(
                 <div 
-                    className="d-flex flex-column bd-highlight mb-3" 
-                    key={index}
-                    onMouseEnter={() => this.hoverOn(index)}
-                    onMouseLeave={() => this.hoverOff()}
-                    style={ this.state.hover? {'color': this.state.color} : null}>
+                    className="d-flex flex-column bd-highlight mb-3 footer-list" 
+                    key={index}>
                     {item.name}
                 </div>
             );
