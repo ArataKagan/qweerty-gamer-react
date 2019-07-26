@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import footerData from './footer-information';
 import styles from './footer.module.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faMeetup } from '@fortawesome/free-brands-svg-icons'
 
 class Footer extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            footerMenuData: footerData
-        }
-    }
-
     render(){
-        const footerData = this.state.footerMenuData.map((item, index) => {
-            return(
-                <div 
-                    className="d-flex flex-column bd-highlight mb-3 footer-list" 
-                    key={index}>
-                    {item.name}
-                </div>
-            );
-        })
+        // const footerData = this.state.footerMenuData.map((item, index) => {
+        //     return(
+        //         <div 
+        //             className="d-flex flex-column bd-highlight mb-3 footer-list" 
+        //             key={index}>
+        //             {item.name}
+        //         </div>
+        //     );
+        // })
         return(
             <div className={styles['footer']}>
                 <div className="container">
@@ -31,7 +23,7 @@ class Footer extends Component {
                             <div className={styles['row']}>
                                 <img src={require('./../../assets/images/qg_logo_png.png')} alt='logo' width='200px'/>
                                 <div className="d-flex flex-column bd-highlight mb-3">
-                                    <div className="p-2 bd-highlight">Qweerty Gamers is a nonprofit organization with the goal of integrating LGBTQ Gamers into the gamer community, to provide the opportunity for local developers to reach out to LGBTQ Gamers, and to provide programs & workshops for upcoming and emerging careers and hobbies within the industry.</div>
+                                    {/* <div className="p-2 bd-highlight">Qweerty Gamers is a nonprofit organization with the goal of integrating LGBTQ Gamers into the gamer community, to provide the opportunity for local developers to reach out to LGBTQ Gamers, and to provide programs & workshops for upcoming and emerging careers and hobbies within the industry.</div> */}
                                     <div className="p-2 bd-highlight">© QWEERTY GAMERS 2019. ALL RIGHTS RESERVED.</div>
                                     <div className={styles['privacy-policy-link']}>
                                         <Link to='/privacy-policy' style={{ color: '#eee', fontWeight: 'bolder' }}>
@@ -42,8 +34,13 @@ class Footer extends Component {
                             </div>
                       </div>
                       <div className="col navigation">
-                            <div className="d-flex flex-column bd-highlight mb-3">
-                                {footerData}
+                            <div className="d-flex flex-column bd-highlight mb-3" style={{marginTop: "10px"}}>
+                                <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Event</div></Link>
+                                <Link to="/about"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>About</div></Link>
+                                <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Blog</div></Link>
+                                <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Shopping</div></Link>
+                                <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Donate</div></Link>
+                                <Link to="/contact-us"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Contact Us</div></Link>
                             </div>
                       </div>
                       <div className="col social" style={{flex: 0, paddingTop: '20px'}}>
