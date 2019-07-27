@@ -6,15 +6,6 @@ import { faFacebook, faTwitter, faMeetup } from '@fortawesome/free-brands-svg-ic
 
 class Footer extends Component {
     render(){
-        // const footerData = this.state.footerMenuData.map((item, index) => {
-        //     return(
-        //         <div 
-        //             className="d-flex flex-column bd-highlight mb-3 footer-list" 
-        //             key={index}>
-        //             {item.name}
-        //         </div>
-        //     );
-        // })
         return(
             <div className={styles['footer']}>
                 <div className="container">
@@ -23,7 +14,6 @@ class Footer extends Component {
                             <div className={styles['row']}>
                                 <img src={require('./../../assets/images/qg_logo_png.png')} alt='logo' width='200px'/>
                                 <div className="d-flex flex-column bd-highlight mb-3">
-                                    {/* <div className="p-2 bd-highlight">Qweerty Gamers is a nonprofit organization with the goal of integrating LGBTQ Gamers into the gamer community, to provide the opportunity for local developers to reach out to LGBTQ Gamers, and to provide programs & workshops for upcoming and emerging careers and hobbies within the industry.</div> */}
                                     <div className="p-2 bd-highlight">© QWEERTY GAMERS 2019. ALL RIGHTS RESERVED.</div>
                                     <div className={styles['privacy-policy-link']}>
                                         <Link to='/privacy-policy' style={{ color: '#eee', fontWeight: 'bolder' }}>

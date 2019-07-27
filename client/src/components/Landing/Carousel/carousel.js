@@ -7,12 +7,12 @@ class Slider extends Component {
     render() {
         
         return (
-            <div className={style['carousel']}>
+            <div className={style['carousel']} style={{padding: '50px'}}>
                 <Carousel 
                     autoplay='true'
+                    style={{marginLeft: 'auto', marginRight: 'auto'}}
                 >
                     <img src="https://i.imgur.com/1EouPxr.png" alt='logo'/>
-                    <img src='https://i.imgur.com/hLjrsgZ.png' alt='image-two' />
                 </Carousel>
             </div>
         )
