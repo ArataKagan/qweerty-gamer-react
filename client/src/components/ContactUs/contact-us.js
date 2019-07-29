@@ -11,35 +11,40 @@ class ContactUs extends Component {
             email: '',
             message: ''
         }
+
+        // this.resetForm = this.resetForm.bind(this);
     }
 
     handleFormSubmit(e){
         e.preventDefault();
         console.log(this.state);
         console.log('submit clicked');
-        axios.post("https://localhost:3001/send",
-        {
-            fname: this.state.fname,
-            lname: this.state.lname,
-            email: this.state.email,
-            message: this.state.message   
-        }).then((response) => {
-            if (response.data.msg === "success"){
-                console.log('message successfully sent');
-                alert("Message Sent.");
-                this.resetForm();
-            } else if(response.data.msg === "fail"){
-                console.log("message was failed to send");
-                alert("Message failed to send.")
-            }
-        })
-        .catch(error => {
-            console.log('axios error happned!');
-            console.log(error.response);
-        })
-    }
 
-    resetForm(){
+        const { fname, lname, email, message } = this.state;
+
+
+        axios.post("/api/form", {
+            fname,
+            lname,
+            email,
+            message
+        })
+        .then(response => {
+            console.log(response);
+        })
+        .catch((err) => {
+            if(err.response){
+                console.log(err.response.data);
+                console.log(err.response.status);
+                console.log(err.response.headers);
+            } else if (err.request){
+                console.log(err.request);
+            } else {
+                console.log("Error", err.message);
+            }
+           console.log(err.config);
+        })
+
         this.setState({
             fname: '',
             lname: '',
@@ -47,6 +52,15 @@ class ContactUs extends Component {
             message: ''
         })
     }
+
+    // resetForm(){
+    //     this.setState({
+    //         fname: '',
+    //         lname: '',
+    //         email: '',
+    //         message: ''
+    //     })
+    // }
 
     render(){
         return(
