@@ -9,12 +9,17 @@ require('dotenv').config();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}))
 
-app.use(cors());
-app.use(function (req, res, next) {
+
+app.use(function(req, res, next) {
+    console.log('request', req.url, req.body, req.method);
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x-token");
+    if(req.method === 'OPTIONS') {
+        res.end();
+    } else {
+        next();
+    }
+});
 
 app.post('/api/form', (req, res) => {
     nodemailer.createTestAccount((err, account) => {

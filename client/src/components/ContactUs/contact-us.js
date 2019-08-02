@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import style from './contact-us.module.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 class ContactUs extends Component {
     constructor(props){
@@ -19,32 +19,36 @@ class ContactUs extends Component {
         e.preventDefault();
         console.log(this.state);
         console.log('submit clicked');
-
-        const { fname, lname, email, message } = this.state;
-
-
-        axios.post("/api/form", {
-            fname,
-            lname,
-            email,
-            message
+        const data = {
+            "fname": this.state.fname,
+            "lname": this.state.lname,
+            "email": this.state.email,
+            "message": this.state.message
+        }
+        
+        fetch("/api/form", {
+            method: "POST",
+            headers: {"Content-Type": "application/json",
+                      "Access-Control-Allow-Origin": "*"
+                     },
+            body: JSON.stringify(data)
         })
+        .then((res) => res.json())
         .then(response => {
-            console.log(response);
-        })
-        .catch((err) => {
-            if(err.response){
-                console.log(err.response.data);
-                console.log(err.response.status);
-                console.log(err.response.headers);
-            } else if (err.request){
-                console.log(err.request);
+            if(response.ok){
+                console.log("request sucess");
+                return response.json();
             } else {
-                console.log("Error", err.message);
+                console.log("request fail");
+                throw new Error("something went wrong..");
             }
-           console.log(err.config);
+        }).catch(err => {
+            
+            console.log(err);
+            console.log("error happed");
         })
 
+       
         this.setState({
             fname: '',
             lname: '',
@@ -104,5 +108,6 @@ class ContactUs extends Component {
         )
     }
 }
+
 
 export default ContactUs;
