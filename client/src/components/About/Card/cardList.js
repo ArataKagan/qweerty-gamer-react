@@ -3,7 +3,6 @@ import {Grid,
         Card, 
         Typography} from '@material-ui/core';
 import style from './card.module.css';
-import myImage from './qg-test.jpg';
 import { Link } from 'react-router-dom';
 
 class CardList extends Component {

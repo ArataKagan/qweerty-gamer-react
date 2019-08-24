@@ -6,7 +6,8 @@ function Advertisement(){
     return(
        <div className='ad-main'>
             <div className='ad-text-box'>
-                <p>Come Join Us</p>
+                <p id="first-text">Making LGBTQ gaming,</p>
+                <p id="second-text">gaming</p>
             </div>
        </div>
     ) 

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import style from './contact-us.module.css';
-// import axios from 'axios';
+import axios from 'axios';
 
 class ContactUs extends Component {
     constructor(props){
@@ -26,27 +26,39 @@ class ContactUs extends Component {
             "message": this.state.message
         }
         
-        fetch("/api/form", {
-            method: "POST",
-            headers: {"Content-Type": "application/json",
-                      "Access-Control-Allow-Origin": "*"
-                     },
-            body: JSON.stringify(data)
-        })
-        .then((res) => res.json())
-        .then(response => {
-            if(response.ok){
-                console.log("request sucess");
-                return response.json();
-            } else {
-                console.log("request fail");
-                throw new Error("something went wrong..");
-            }
-        }).catch(err => {
-            
-            console.log(err);
-            console.log("error happed");
-        })
+        // fetch("http://localhost:3000/api/form", {
+        //     method: "POST",
+        //     headers: {"Content-Type": "application/json",
+        //               "Access-Control-Allow-Origin": "*"
+        //              },
+        //     body: JSON.stringify(data)
+        // })
+        // .then((res) => {return res.json()})
+        // .then(res => {
+        //     if(res.ok){
+        //         console.log("request sucess");
+        //         return res.json();
+        //     } else {
+        //         console.log("request fail");
+        //         throw new Error("something went wrong..");
+        //     }
+        // }).catch(err => {
+        //     console.log(err);
+        //     console.log("error happed");
+        // }) 
+
+        axios.post("http://localhost:3001/contact", data)
+            .then(
+                response => {
+                    console.log("success!");
+                    console.log(response.data);
+            })
+            .catch(err => {
+                console.log(err);
+                console.log(err.code);
+                console.log(err.message);
+                console.log(err.stack);
+            })
 
        
         this.setState({
@@ -76,7 +88,7 @@ class ContactUs extends Component {
                     <div>
                         <div className='row'>
                             <div className='col'>
-                                <form action='/action_page.php' className={style['form-main']}>
+                                <form className={style['form-main']} method="POST" action="/contact">
                                     <label className={style['label']}>First Name</label>
                                     <input type='text' className={style['form-input']} id='fname' name='firstname' 
                                         placeholder='Your first name...' 

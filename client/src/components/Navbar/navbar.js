@@ -89,8 +89,8 @@ class Navigation extends Component {
                         </div>
                     </Nav>
                 </Collapse>
-                </Navbar>
-            </div>
+                </Navbar> 
+        </div>
             
         );
     }
