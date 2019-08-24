@@ -6,16 +6,10 @@ import Advertisement from './Advertisement/advertisement';
 
 class Landing extends Component {
     render() {
-        let inlineStyle = {
-            backgroundColor : '#1d1e22'
-        }
         return (
-            <div style={inlineStyle}>
+            <div>
                <Advertisement />
-               <Slider />
-               <CompanyMission />
-               
-               
+               <Slider />           
             </div>
         )
     }

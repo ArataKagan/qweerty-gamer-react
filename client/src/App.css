@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-#news- {
+/* #news- {
   position: absolute;
   display: block;
   top: 2em;
@@ -11,24 +11,15 @@
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-
-}
-
-/* .carousel {
-  padding: 10px, 60px, 10px, 60px;
 } */
 
-/* .ml-auto {
-  color: white;
-} */
-
-.newsArticles {
+/* .newsArticles {
   position: relative;
   background-position: center;
   color: black;
   height: 30vh;
 
-}
+} */
 
 /* .newsArticles > div {
   font-family: 'Open Sans', sans-serif;
@@ -40,6 +31,23 @@
   left: 45%;
   transform: translate(-50%, -45%);
 } */
+
+.carousel-main {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.carousel-main .container {
+  margin: 0px;
+  padding: 0px;
+}
+
+.carousel-main .row {
+  height: 55vh;
+  margin: 0px;
+  padding: 0px;
+}
 
 .ad-main {
     position: relative;
@@ -77,6 +85,12 @@
   top: 80%;
   left: 45%;
   transform: translate(-50%, -50%)
+}
+
+.sign-up p {
+  font: 40px;
+  color: white;
+
 }
 
 @media only screen and (max-width: 600px){
