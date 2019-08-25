@@ -2,6 +2,32 @@
   text-align: center;
 }
 
+.ad-main #first-text {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 84px;
+  white-space: nowrap;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  transform: translate(-50%, -50%)
+}
+
+.ad-main #second-text {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 84px;
+  white-space: nowrap;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%)
+}
+
 /* #news- {
   position: absolute;
   display: block;
@@ -32,11 +58,68 @@
   transform: translate(-50%, -45%);
 } */
 
-.carousel-main {
+.news-main {
   padding: 0px;
   margin: 0px;
   width: 100%;
 }
+
+.news-main .event {
+  background-color: #eee;
+  width: 70%;
+  height: 70vh;
+}
+
+.event-inner {
+  padding: 35px;
+}
+
+.event-inner .ad-text {
+  font-size: 30px;
+  font-family: 'PT Sans', sans-serif;
+  color: #595959;
+  font-weight: bold;
+}
+
+.news-main .sign-up {
+  width: 30%;
+  background-color: #CCB000;
+  height: 70vh;
+  padding: 0px;
+}
+
+.news-main .sign-up-inner {
+  font-size: 40px;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 25%;
+  left: 5%;
+}
+
+.news-main .text1 {
+  display: block;
+  position: absolute;
+  float: left;
+}
+
+.news-main .text2 {
+  display: block;
+  font-size: 30px;
+  position: absolute;
+  white-space: nowrap;
+  float: left;
+  top: 90px;
+  left: 10px;
+
+}
+
+
+
+
+
+
 
 .carousel-main .container {
   margin: 0px;
@@ -60,38 +143,38 @@
     background-position: center;
 }
 
+.mission-outer {
+  background-image: linear-gradient(
+        to right bottom , rgba(0, 0, 0, 0.468)),
+        url(./assets/images/poke-walk.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+}
 
-.ad-main #first-text {
-  display: block;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: bold;
-  color: white;
-  font-size: 84px;
-  white-space: nowrap;
+.mission-inner {
   position: absolute;
-  top: 70%;
-  left: 45%;
-  transform: translate(-50%, -50%)
+  top: 20%;
+  padding: 30px;
 }
 
-.ad-main #second-text {
-  display: block;
-  font-family: 'PT Sans', sans-serif;
+.mission-inner .statement-1 {
+  color: white;
+  font-size: 30px;
   font-weight: bold;
-  color: white;
-  font-size: 84px;
-  white-space: nowrap;
-  position: absolute;
-  top: 80%;
-  left: 45%;
-  transform: translate(-50%, -50%)
+  font-family: 'PT Sans', sans-serif;
 }
 
-.sign-up p {
-  font: 40px;
+.mission-inner .statement-2 {
   color: white;
-
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
 }
+
+
+
+
 
 @media only screen and (max-width: 600px){
   .ad-main {
