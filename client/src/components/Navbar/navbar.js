@@ -75,18 +75,6 @@ class Navigation extends Component {
                             <NavItem>
                                 <NavLink href="/contact-us" style={navStyle} className={styles['nav-item']}>Contact Us</NavLink>
                             </NavItem>
-                        
-                        <div className="navbar-nav flex-row mb-2"> 
-                        <NavItem className={styles['social-icon']}>
-                            <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#feda6a" /></a>
-                        </NavItem> 
-                        <NavItem className={styles['social-icon']}>
-                            <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#feda6a" /></a>
-                        </NavItem> 
-                        <NavItem className={styles['social-icon']}>
-                            <FontAwesomeIcon icon={faMeetup} size="2x" color="#feda6a"/>
-                        </NavItem>
-                        </div>
                     </Nav>
                 </Collapse>
                 </Navbar> 
