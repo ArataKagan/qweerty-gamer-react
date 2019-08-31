@@ -259,7 +259,8 @@ Carousel img{
     left: 40%;
     white-space: normal;
     font-weight: stronger;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    font-family: 'Abril Fatface', cursive;
   }
   
   .ad-main #second-text {
@@ -267,7 +268,8 @@ Carousel img{
     top: 77%;
     left: 40%;
     font-weight: stronger;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    font-family: 'Abril Fatface', cursive;
   }
 
   .news-main .event {
