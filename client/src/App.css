@@ -20,7 +20,8 @@
 
 .ad-main #first-text {
   display: block;
-  font-family: 'PT Sans', sans-serif;
+  /* font-family: 'PT Sans', sans-serif; */ 
+  font-family: 'Abril Fatface', cursive;
   font-weight: bold;
   color: white;
   font-size: 80px;
@@ -33,7 +34,8 @@
 
 .ad-main #second-text {
   display: block;
-  font-family: 'PT Sans', sans-serif;
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Abril Fatface', cursive;
   font-weight: bold;
   color: white;
   font-size: 80px;

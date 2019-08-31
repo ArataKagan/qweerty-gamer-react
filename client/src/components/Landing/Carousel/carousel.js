@@ -12,8 +12,8 @@ class Slider extends Component {
                         <div className="event-inner">
                             <p className="p-2 bd-highlight ad-text">What's happening now</p>
                             <div>
-                                <Carousel autoplay='true'>
-                                    <img src="https://i.imgur.com/ExlV7U0.png" className="pokemon-go-event" alt='logo'/>
+                                <Carousel>
+                                    <img src="https://i.imgur.com/6EL0c42.jpg" className="pokemon-go-event" alt='logo'/>
                                 </Carousel>
                             </div>
                         </div>
