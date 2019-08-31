@@ -33,8 +33,8 @@ class Footer extends Component {
                                 <Link to="/contact-us"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Contact Us</div></Link>
                             </div>
                       </div>
-                      <div className="col social" style={{flex: 0, paddingTop: '20px'}}>
-                            <div className="d-flex flex-column bd-highlight mb-3">
+                      <div className={styles["social-icons"]} style={{flex: 0, paddingTop: '20px'}}>
+                            <div className="d-flex flex-column bd-highlight mb-3 social-icons">
                                 <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>
                                 <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#eee" /></a>
                                 <FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/>

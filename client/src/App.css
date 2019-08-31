@@ -23,7 +23,7 @@
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   color: white;
-  font-size: 84px;
+  font-size: 80px;
   white-space: nowrap;
   position: absolute;
   top: 70%;
@@ -36,7 +36,7 @@
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   color: white;
-  font-size: 84px;
+  font-size: 80px;
   white-space: nowrap;
   position: absolute;
   top: 84%;
@@ -177,12 +177,11 @@ Carousel img{
 
 @media only screen and (max-width: 765px){
   .ad-main #first-text {
-    font-size: 50px;
-    
+    font-size: 70px;
   }
+
   .ad-main #second-text {
-    font-size: 50px;
-    
+    font-size: 70px;
   }
 
   .news-main {
@@ -208,24 +207,17 @@ Carousel img{
 
 @media only screen and (max-width: 600px){
   .ad-main #first-text {
+    font-size: 50px;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%)
   }
   
   .ad-main #second-text {
+    font-size: 50px;
     top: 80%;
     left: 20%;
     transform: translate(-50%, -50%)
-  }
-
-  .ad-main #first-text {
-    font-size: 30px;
-    
-  }
-  .ad-main #second-text {
-    font-size: 30px;
-    
   }
 
   .news-main {
@@ -236,7 +228,7 @@ Carousel img{
 
   .news-main .event {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
   }
 
   .pokemon-go-event {
@@ -248,13 +240,8 @@ Carousel img{
     height: 30%;
   }
 
-  .news-main .social-middle {
-    width: 100%;
-    height: 50vh;
-  }
-
   .news-main .social-middle-inner {
-    left: 7%;
+    left: 23%;
   }
 
   .mission-inner {
@@ -262,6 +249,45 @@ Carousel img{
     padding: 30px;
   }
 
+}
+
+@media only screen and (max-width: 400px){
+
+  .ad-main #first-text {
+    font-size: 70px;
+    top: 40%;
+    left: 40%;
+    white-space: normal;
+    font-weight: stronger;
+    transform: translate(-50%, -50%)
+  }
+  
+  .ad-main #second-text {
+    font-size: 70px;
+    top: 77%;
+    left: 40%;
+    font-weight: stronger;
+    transform: translate(-50%, -50%)
+  }
+
+  .news-main .event {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .pokemon-go-event {
+    width: 110px;
+    height: 200px;
+  }
+
+  .news-main .social-middle {
+    height: 40vh;
+  }
+
+  .news-main .social-middle-inner {
+    top: 15%;
+    left: 7%;
+  }
 }
 
 

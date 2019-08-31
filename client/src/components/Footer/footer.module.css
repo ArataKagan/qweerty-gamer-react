@@ -7,13 +7,19 @@
 row {
     padding: 30px;
 }
-
+/* 
 .social-media {
     flex: 0;
-}
+} */
 
 .footer-list:hover {
     color: gray !important;
+}
+
+@media only screen and (max-width: 600px){
+    .social-icons {
+        display: none;   
+    }
 }
 
 
