@@ -21,28 +21,28 @@
 .ad-main #first-text {
   display: block;
   /* font-family: 'PT Sans', sans-serif; */ 
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Marker Felt', 'fantasy';
   font-weight: bold;
   color: white;
   font-size: 80px;
   white-space: nowrap;
   position: absolute;
   top: 70%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%)
 }
 
 .ad-main #second-text {
   display: block;
   /* font-family: 'PT Sans', sans-serif; */
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Marker Felt', 'fantasy';
   font-weight: bold;
   color: white;
   font-size: 80px;
   white-space: nowrap;
   position: absolute;
   top: 84%;
-  left: 18%;
+  left: 50%;
   transform: translate(-50%, -50%)
 }
 
@@ -112,7 +112,7 @@ Carousel img{
 
 .social-middle {
   width: 30%;
-  background-color: #CCB000;
+  background-color: #E0A8D7;
   height: 70vh;
   padding: 0px;
   position: relative;
@@ -218,7 +218,7 @@ Carousel img{
   .ad-main #second-text {
     font-size: 50px;
     top: 80%;
-    left: 20%;
+    left: 50%;
     transform: translate(-50%, -50%)
   }
 
@@ -258,7 +258,7 @@ Carousel img{
   .ad-main #first-text {
     font-size: 70px;
     top: 40%;
-    left: 40%;
+    left: 50%;
     white-space: normal;
     font-weight: stronger;
     transform: translate(-50%, -50%);
@@ -268,7 +268,7 @@ Carousel img{
   .ad-main #second-text {
     font-size: 70px;
     top: 77%;
-    left: 40%;
+    left: 50%;
     font-weight: stronger;
     transform: translate(-50%, -50%);
     font-family: 'Abril Fatface', cursive;

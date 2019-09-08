@@ -55,11 +55,9 @@ class ContactUs extends Component {
             })
             .catch(err => {
                 console.log(err);
-                console.log(err.code);
                 console.log(err.message);
                 console.log(err.stack);
             })
-
        
         this.setState({
             fname: '',
@@ -69,14 +67,6 @@ class ContactUs extends Component {
         })
     }
 
-    // resetForm(){
-    //     this.setState({
-    //         fname: '',
-    //         lname: '',
-    //         email: '',
-    //         message: ''
-    //     })
-    // }
 
     render(){
         return(
@@ -88,7 +78,7 @@ class ContactUs extends Component {
                     <div>
                         <div className='row'>
                             <div className='col'>
-                                <form className={style['form-main']} method="POST" action="/contact">
+                                <form className={style['form-main']} method="POST" onSubmit={e => this.handleFormSubmit(e)} action="/contact">
                                     <label className={style['label']}>First Name</label>
                                     <input type='text' className={style['form-input']} id='fname' name='firstname' 
                                         placeholder='Your first name...' 
@@ -108,8 +98,7 @@ class ContactUs extends Component {
                                         placeholder='Write something..'
                                         onChange={e => this.setState({ message: e.target.value })}>
                                     </textarea>
-                                    <input type='submit' className={style['form-submit']} value='Submit' 
-                                    onClick={e => this.handleFormSubmit(e)} value="Submit"/>
+                                    <input type='submit' className={style['form-submit']} value='Submit' />
                                 </form>
                             </div>
                             
