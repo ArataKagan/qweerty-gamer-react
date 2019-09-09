@@ -256,22 +256,21 @@ Carousel img{
 @media only screen and (max-width: 400px){
 
   .ad-main #first-text {
-    font-size: 70px;
+    font-size: 60px;
     top: 40%;
     left: 50%;
     white-space: normal;
     font-weight: stronger;
     transform: translate(-50%, -50%);
-    font-family: 'Abril Fatface', cursive;
   }
   
   .ad-main #second-text {
-    font-size: 70px;
+    font-size: 60px;
     top: 77%;
     left: 50%;
+    white-space: normal;
     font-weight: stronger;
     transform: translate(-50%, -50%);
-    font-family: 'Abril Fatface', cursive;
   }
 
   .news-main .event {

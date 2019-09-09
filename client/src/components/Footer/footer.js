@@ -27,9 +27,7 @@ class Footer extends Component {
                             <div className="d-flex flex-column bd-highlight mb-3" style={{marginTop: "10px"}}>
                                 <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Event</div></Link>
                                 <Link to="/about"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>About</div></Link>
-                                <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Blog</div></Link>
-                                <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Shopping</div></Link>
-                                <Link to="/"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Donate</div></Link>
+                                <Link to="https://tiltify.com/qweerty-gamers"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Donate</div></Link>
                                 <Link to="/contact-us"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Contact Us</div></Link>
                             </div>
                       </div>

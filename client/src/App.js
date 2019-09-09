@@ -4,6 +4,7 @@ import Navigation from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 import './App.css';
 import Landing from './components/Landing/landing';
+import Event from './components/Event/event';
 import About from './components/About/about';
 import Member from './components/About/Member/member';
 import ContactUs from './components/ContactUs/contact-us';
@@ -18,6 +19,7 @@ class App extends Component {
         </nav>
         <main>
           <Route exact path='/' component={ Landing } />
+          <Route path="/event" component={ Event } />
           <Route path='/about' component={ About } />
           <Route path='/member' component={ Member } />
           <Route path='/privacy-policy' component={ PrivacyPolicy } />

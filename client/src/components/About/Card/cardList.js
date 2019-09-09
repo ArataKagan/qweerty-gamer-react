@@ -13,7 +13,7 @@ class CardList extends Component {
                 <Grid container>
                         <Grid item xs>
                             <Link to="/member">
-                                <Card style={{ minWidth: 275,padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
+                                <Card style={{ minWidth: 275,padding: 60, margin: 20, borderStyle: "solid", borderColor: "white", backgroundColor: "#393f4d", color: "white"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <p>Member</p>
                                     </Typography>
@@ -22,7 +22,7 @@ class CardList extends Component {
                         </Grid>
                         <Grid item xs>
                             <Link to="#">
-                                <Card style={{ minWidth: 275, padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
+                                <Card style={{ minWidth: 275, padding: 60, margin: 20, borderStyle: "solid", borderColor: "white", backgroundColor: "#393f4d", color: "white"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <p>Partner</p>
                                     </Typography>
@@ -31,7 +31,7 @@ class CardList extends Component {
                         </Grid>
                         <Grid item xs>
                             <Link to="#">
-                                <Card style={{ minWidth: 275, padding: 60, margin: 20, backgroundColor: "#BCBCBE", color: "white"}}>
+                                <Card style={{ minWidth: 275, padding: 60, margin: 20, borderStyle: "solid", borderColor: "white", backgroundColor: "#393f4d", color: "white"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <p>Volunteer</p>
                                     </Typography>

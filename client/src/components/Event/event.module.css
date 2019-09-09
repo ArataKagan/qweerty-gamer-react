@@ -1,0 +1,57 @@
+.event-image {
+    background-size: cover;
+    height: 55vh;
+    position: relative;
+    background-image: 
+        linear-gradient(
+            #fcedd923, rgb(199, 199, 199)),
+            url(./event-image.jpg);
+}
+
+.event-image-inner {
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    left: 5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.event-main {
+    font-size: 30px;
+    height: 90vh;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.pokego-event-0915 {
+    height: 300px;
+}
+
+@media only screen and (max-width: 765px){
+    .event-image-inner {
+        font-size: 30px;
+    }
+
+    .event-main {
+        font-size: 25px;
+    }
+
+    .pokego-event-0915 {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .event-image-inner {
+        font-size: 30px;
+    }
+
+    .event-main {
+        font-size: 25px;
+    }
+    
+    .pokego-event-0915 {
+        height: 180px;
+    }
+}

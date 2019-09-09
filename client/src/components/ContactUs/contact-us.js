@@ -75,7 +75,7 @@ class ContactUs extends Component {
                 </div>
                 <div className={style['contact-us-main']}>
                     <h1 className={style['h1']}>Contact Us</h1>
-                    <div>
+                    {/* <div>
                         <div className='row'>
                             <div className='col'>
                                 <form className={style['form-main']} method="POST" onSubmit={e => this.handleFormSubmit(e)} action="/contact">
@@ -101,8 +101,13 @@ class ContactUs extends Component {
                                     <input type='submit' className={style['form-submit']} value='Submit' />
                                 </form>
                             </div>
-                            
                         </div>
+                    </div> */} 
+                    <div className={style['text']}>
+                        Please email us to the following address for any inquiries:
+                    </div>
+                    <div className={style['email-address']}>
+                        ray@qweertygamers.org 
                     </div>
                 </div>
             </div>

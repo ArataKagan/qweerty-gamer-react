@@ -58,19 +58,13 @@ class Navigation extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Event</NavLink>
+                                <NavLink href="/event" style={navStyle} className={styles['nav-item']}>Event</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/about" style={navStyle} className={styles['nav-item']}>About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Blog</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Shopping</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>Donate</NavLink>
+                                <NavLink href="https://tiltify.com/qweerty-gamers" style={navStyle} className={styles['nav-item']}>Donate</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/contact-us" style={navStyle} className={styles['nav-item']}>Contact Us</NavLink>
