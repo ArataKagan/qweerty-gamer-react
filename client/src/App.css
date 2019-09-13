@@ -102,13 +102,10 @@
 }
 
 .pokemon-go-event {
-  width: 110px;
+  /* width: 110px; */
   height: 350px;
 }
 
-Carousel img{
-  width: 10px;
-}
 
 .social-middle {
   width: 30%;
@@ -129,7 +126,11 @@ Carousel img{
 }
 
 .social-icons-middle a {
-  padding: 15px;
+  padding: 10px;
+}
+
+.meetup {
+  margin-left: 7px;
 }
 
 .carousel-main .container {
@@ -173,9 +174,11 @@ Carousel img{
   font-family: 'PT Sans', sans-serif;
 }
 
-
-
-
+@media only screen and (min-width: 1140px){
+  .social-middle-inner {
+    left: 10%;
+  }
+}
 
 @media only screen and (max-width: 765px){
   .ad-main #first-text {
@@ -291,6 +294,32 @@ Carousel img{
     top: 15%;
     left: 7%;
   }
+}
+
+@media only screen and (min-device-width: 375px) 
+                   and (max-device-width: 667px) 
+                   and (orientation: landscape) {
+
+                    .ad-main {
+                      height: 140vh;
+                    }
+
+                    .news-main .event {
+                      height: 170vh;
+                    }
+
+                    .news-main .social-middle {
+                      height: 90vh;
+                    }
+
+                    .mission-outer {
+                      height: 130vh;
+                    }
+
+                    .social-middle-inner {
+                      left: -100%;
+                    }
+
 }
 
 
