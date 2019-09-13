@@ -1,4 +1,6 @@
 .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #1d1e22;
     color: white; 
     font-family: 'Open Sans', sans-serif;
@@ -16,22 +18,15 @@ row {
     color: gray !important;
 }
 
+.social-icons a {
+    padding-top: 0px;
+    padding-bottom: 12px;
+}
+
 @media only screen and (max-width: 600px){
     .social-icons {
         display: none;   
     }
 }
 
-@media only screen and (min-device-width: 375px) 
-                   and (max-device-width: 667px) 
-                   and (orientation: landscape) {
-
-                    .footer {
-                        padding-top: 30px;
-                        padding-bottom: 30px;
-                        background-color: #1d1e22;
-                        color: white; 
-                        font-family: 'Open Sans', sans-serif;
-                    }             
-}
 

@@ -35,7 +35,7 @@ class Footer extends Component {
                             <div className="d-flex flex-column bd-highlight mb-3 social-icons">
                                 <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>
                                 <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#eee" /></a>
-                                <FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/>
+                                <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/></a>
                             </div>
                       </div>
                    </div>
