@@ -13,27 +13,27 @@ class CardList extends Component {
                 <Grid container>
                         <Grid item xs>
                             <Link to="/member">
-                                <Card style={{ minWidth: 275,padding: 60, margin: 20, borderStyle: "solid", borderColor: "white", backgroundColor: "#393f4d", color: "white"}}>
+                                <Card style={{ minWidth: 275,padding: 60, margin: 20, borderColor: "#feda6a", backgroundColor: "#D5C220", fontWeight: "bold", color: "#eee"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <p>Member</p>
+                                        <p style={{fontWeight: "bold"}}>Member</p>
                                     </Typography>
                                 </Card>
                             </Link>
                         </Grid>
                         <Grid item xs>
                             <Link to="#">
-                                <Card style={{ minWidth: 275, padding: 60, margin: 20, borderStyle: "solid", borderColor: "white", backgroundColor: "#393f4d", color: "white"}}>
+                                <Card style={{ minWidth: 275, padding: 60, margin: 20, borderColor: "#feda6a", backgroundColor: "#D5C220", fontWeight: "bold", color: "#eee"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <p>Partner</p>
+                                        <p style={{fontWeight: "bold"}}>Partner</p>
                                     </Typography>
                                 </Card>
                             </Link>
                         </Grid>
                         <Grid item xs>
                             <Link to="#">
-                                <Card style={{ minWidth: 275, padding: 60, margin: 20, borderStyle: "solid", borderColor: "white", backgroundColor: "#393f4d", color: "white"}}>
+                                <Card style={{ minWidth: 275, padding: 60, margin: 20, borderColor: "#feda6a", backgroundColor: "#D5C220", color: "#eee"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <p>Volunteer</p>
+                                        <p style={{fontWeight: "bold"}}>Volunteer</p>
                                     </Typography>
                                 </Card>
                             </Link>

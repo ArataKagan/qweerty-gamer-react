@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './about.module.css';
+import styles from './about.module.scss';
 import CardList from './Card/cardList';
 
 function About(){

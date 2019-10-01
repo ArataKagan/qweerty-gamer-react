@@ -1,3 +1,4 @@
+$primaryFontColor: #505050;
 
 .about-image {
     height: 40vh;
@@ -12,19 +13,19 @@
 }
 
 .h1 {
-    color: white;
+    color: $primaryFontColor;
     padding: 30px;
     font-family: 'Archivo Black', sans-serif;
 } 
 
 .about-paragraph {
-    color: white;
+    color: $primaryFontColor;
     /* margin: 40px; */
     font-family: 'Open Sans', sans-serif;
 }
 
 .about-second-half {
-    background-color: #393f4d;
+    background-color: #eee;
 }
 
 h3 {
