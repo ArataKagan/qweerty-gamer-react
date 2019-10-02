@@ -9,7 +9,7 @@ function About(){
                 </div>
                 <div className={styles['about-second-half']}>
                     <h1 className={styles['h1']}>About Qweerty Gamers</h1>
-                    <p className={styles['about-paragraph']}>Qweerty Gamers is a nonprofit organization with the goal of integrating LGBTQ Gamers into the gamer community, to provide the opportunity for local developers to reach out to LGBTQ Gamers, and to provide programs & workshops for upcoming and emerging careers and hobbies within the industry.</p>
+                    <p className={styles['about-paragraph']}>Qweerty Gamers is a growing nonprofit 501(c)(3) based in Los Angeles, CA. In 2015, Qweerty existed as a small Facebook Group for a shared Minecraft server. In late 2017, Qweerty focused on a new mission, to "Game for good". Quickly after, Qweerty began launching fundraisers for organizations like the National Center for Lesbian Rights, and the Translatina Coalition. Qweerty's goals were reciprocated in the community quickly. Later in 2018, Qweerty was approached by sympathetic lawyers and helped Qweerty file for nonprofit status. Qweerty works with organizations such as RIOT, Niantic, Blizzard, and other major and independent video game studios to provide free events, workshops, and more.</p>
                     <CardList />
                 </div>
             </div>
