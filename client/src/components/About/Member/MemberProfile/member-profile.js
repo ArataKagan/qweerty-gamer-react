@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import memberData from './member-information.js';
-import style from '../member.module.css';
+import style from '../member.module.scss';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 // import MemberModal from './member-modal';

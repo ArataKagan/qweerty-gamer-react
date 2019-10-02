@@ -1,6 +1,8 @@
+$primaryFontColor: #505050;
+
 .member {
-    background-color: #393f4d;
-    color: white;
+    background-color: #eee;
+    color: $primaryFontColor;
     font-family: 'Archivo Black', sans-serif;
 }
 

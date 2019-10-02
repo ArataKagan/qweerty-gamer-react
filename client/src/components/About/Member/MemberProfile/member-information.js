@@ -17,11 +17,18 @@ export default [
         id: 3,
         name: "Kirby Conner",
         title: "Staff Volunteer",
-        description: "",
+        description: "Connor discovered Qweerty Gamers after searching for a gaymer community that wasn’t limited to talking through screens. Welcoming an opportunity to expand his knowledge of community building, Kirby quickly volunteered to help moderate the Qweerty Social Media pages by creating engaging content, as well as help organize events. Equipped with his knowledge of video game culture and history, Kirby hopes to help make Qweerty a positive space for both Gamers and the LGBT community alike through valuable in-person meetups.",
         image: require('./image/kirby.jpeg')
     },
     {
         id: 4,
+        name: 'Joe Song',
+        title: "Graphic Designer",
+        description: "A recently added member to Qweerty Gamers, Joseph Song is also their head graphic designer as well as one of the artists for Qweerty gamers as of April of 2019. Joseph is an art student who hopes to one day break into the gaming industry in the graphics or art department. Using his skills with digital illustrations programs to produce banners and flyers for upcoming events for Qweerty. When not helping out with Qweerty, Joseph is usually at shcool or at home taking care of his 2 cats.",
+        image: require('./image/joe.jpg')
+    },
+    {
+        id: 5,
         name: 'Arata Kagan',
         title: "Web Developer",
         image: require('./image/arata.jpeg')

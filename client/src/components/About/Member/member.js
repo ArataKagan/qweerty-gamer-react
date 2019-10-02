@@ -1,6 +1,6 @@
 import React from 'react';
 import MemberProfile from './MemberProfile/member-profile.js';
-import style from './member.module.css';
+import style from './member.module.scss';
 
 function Member(){
     return(

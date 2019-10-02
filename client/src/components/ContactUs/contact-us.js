@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import style from './contact-us.module.css';
+import style from './contact-us.module.scss';
 import axios from 'axios';
 
 class ContactUs extends Component {
