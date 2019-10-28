@@ -5,7 +5,7 @@ import style from './member.module.scss';
 function Member(){
     return(
         <div className={style['member']}>
-            <h1 style={{paddingTop: '50px'}}>Qweerty Members</h1>
+            <h3 style={{paddingTop: '50px'}}>Qweerty Members</h3>
             <MemberProfile />
         </div>
     )

@@ -9,9 +9,14 @@ import About from './components/About/about';
 import Member from './components/About/Member/member';
 import ContactUs from './components/ContactUs/contact-us';
 import PrivacyPolicy from './components/Footer/PrivacyPolicy/privacy-policy';
+import ReactGA from 'react-ga';
 
 class App extends Component {
   render() {
+    function initializeReactGA(){
+      ReactGA.initialize('UA-150899979-1');
+      ReactGA.pageview('/');
+    }
     return (
       <div className='App'>
         <nav>
