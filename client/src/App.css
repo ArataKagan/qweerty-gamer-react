@@ -21,7 +21,7 @@
 .ad-main #first-text {
   display: block;
   /* font-family: 'PT Sans', sans-serif; */ 
-  font-family: 'Marker Felt', 'fantasy';
+  font-family: 'Bungee', cursive;
   font-weight: bold;
   color: white;
   font-size: 80px;
@@ -146,9 +146,9 @@
 
 
 .mission-outer {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
         to right bottom , rgba(0, 0, 0, 0.468)),
-        url(./assets/images/poke-walk.jpg);
+        url(./assets/images/poke-walk.jpg); */
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -158,20 +158,20 @@
 .mission-inner {
   position: absolute;
   top: 20%;
-  padding: 30px;
+  padding: 50px;
 }
 
 .mission-inner .statement-1 {
-  color: white;
+  color: black;
   font-size: 30px;
   font-weight: bold;
-  font-family: 'PT Sans', sans-serif;
+  font-family:'Bungee', cursive;
 }
 
 .mission-inner .statement-2 {
-  color: white;
+  color: black;
   font-size: 20px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (min-width: 1140px){

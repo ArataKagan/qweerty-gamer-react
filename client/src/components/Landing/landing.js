@@ -9,7 +9,7 @@ class Landing extends Component {
         return (
             <div>
                <Advertisement />
-               <Slider />
+               
                <Mission />           
             </div>
         )
