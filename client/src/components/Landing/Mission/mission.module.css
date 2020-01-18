@@ -1,0 +1,45 @@
+
+.mission-outer {
+    /* background-image: linear-gradient(
+          to right bottom , rgba(0, 0, 0, 0.468)),
+          url(./assets/images/poke-walk.jpg); */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+  }
+  
+  .mission-inner {
+    position: absolute;
+    top: 20%;
+    padding: 50px;
+  }
+  
+  .mission-inner .statement-1 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Bungee', cursive;
+  }
+  
+  .mission-inner .statement-2 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  @media only screen and (max-width: 600px){
+    .mission-inner {
+      top: 0%;
+      padding: 30px;
+    }
+  }
+
+  @media only screen and (min-device-width: 375px) 
+                   and (max-device-width: 667px) 
+                   and (orientation: landscape) {
+                    .mission-outer {
+                      height: 130vh;
+                    }
+
+                   }

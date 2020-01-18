@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Navigation from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
-import './App.css';
 import Landing from './components/Landing/landing';
 import Event from './components/Event/event';
 import About from './components/About/about';
