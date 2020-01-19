@@ -1,8 +1,4 @@
-
 .mission-outer {
-    /* background-image: linear-gradient(
-          to right bottom , rgba(0, 0, 0, 0.468)),
-          url(./assets/images/poke-walk.jpg); */
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -19,12 +15,14 @@
     color: black;
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
     font-family:'Bungee', cursive;
   }
   
   .mission-inner .statement-2 {
     color: black;
     font-size: 20px;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
   }
 

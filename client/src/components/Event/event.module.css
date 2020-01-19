@@ -5,7 +5,7 @@
     background-image: 
         linear-gradient(
             #fcedd923, rgb(199, 199, 199)),
-            url(./event-image.jpg);
+            url(../../assets/images/event-image.jpg);
 }
 
 .event-image-inner {

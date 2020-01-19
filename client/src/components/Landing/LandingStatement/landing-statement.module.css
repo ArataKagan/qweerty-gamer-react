@@ -1,0 +1,18 @@
+.main {
+    position: relative;
+    height: 15vh;
+    background-size: cover;
+    background-position: cover;
+}
+
+.landing-statement {
+    display: block;
+    
+    position: absolute;
+    font-family: 'Bungee', cursive;
+    font-size: 65px;
+    white-space: nowrap;
+    letter-spacing: 12%;
+    top: 15%;
+    left: 10%;
+}
