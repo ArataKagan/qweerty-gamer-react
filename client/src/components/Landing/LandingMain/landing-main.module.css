@@ -4,7 +4,7 @@
     height: 95vh;
     background-image: linear-gradient(
         to right bottom ,
-        rgba(0, 0, 0, 0.372)),
+        rgba(0, 0, 0, 0.2)),
         url(../../../assets/images/qg-member-pic.jpg);
     background-size: cover;
     background-position: center;

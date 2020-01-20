@@ -10,9 +10,13 @@
     
     position: absolute;
     font-family: 'Bungee', cursive;
-    font-size: 65px;
+    font-size: 5vw;
+    font-weight: normal;
     white-space: nowrap;
     letter-spacing: 12%;
     top: 15%;
-    left: 10%;
+    left: 6%;
+    text-shadow: -1px 0 #553FBE, 0 1px #553FBE, 6px 0 #553FBE, 0 -1px #553FBE;
+    color: #ffffff;
+    
 }
