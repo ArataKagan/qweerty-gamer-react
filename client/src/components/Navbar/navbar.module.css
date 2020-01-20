@@ -33,9 +33,13 @@
     background-image: linear-gradient(black, gray);
 }
 
+.nav-item {
+    color: "#feda6a" !important;
+}
+
 .nav-item:hover {
-    background-color: #feda6a;
+    text-decoration: underline !important;
+    text-decoration-color: #feda6a !important;
     color: #eee !important;
-    text-shadow: 2px 2px #989898;
-    border-radius: 5px;
+
 }

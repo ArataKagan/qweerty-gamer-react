@@ -23,14 +23,6 @@ class Footer extends Component {
                                 </div>
                             </div>
                       </div>
-                      <div className="col navigation">
-                            <div className="d-flex flex-column bd-highlight mb-3" style={{marginTop: "10px"}}>
-                                <Link to="/event"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Event</div></Link>
-                                <Link to="/about"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>About</div></Link>
-                                <Link to="https://tiltify.com/qweerty-gamers"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Donate</div></Link>
-                                <Link to="/contact-us"><div className="d-flex flex-column bd-highlight mb-3 footer-list" style={{color:"#eee"}}>Contact Us</div></Link>
-                            </div>
-                      </div>
                       <div className={styles["social-icons"]} style={{flex: 0, paddingTop: '20px'}}>
                             <div className="d-flex flex-column bd-highlight mb-3 social-icons">
                                 <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>

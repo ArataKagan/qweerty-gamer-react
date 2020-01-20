@@ -47,7 +47,9 @@ class Navigation extends Component {
     render() {
 
         const navStyle = {
-            color: "#feda6a"
+            color: "#ffffff",
+            fontFamily: 'Bungee',
+            textDecoration: 'none'
         }
     
         return (
@@ -58,16 +60,19 @@ class Navigation extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/event" style={navStyle} className={styles['nav-item']}>Event</NavLink>
+                                <NavLink href="/" style={navStyle} className={styles['nav-item']}>HOME</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/about" style={navStyle} className={styles['nav-item']}>About</NavLink>
+                                <NavLink href="/event" style={navStyle} className={styles['nav-item']}>EVENTS</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://tiltify.com/qweerty-gamers" style={navStyle} className={styles['nav-item']}>Donate</NavLink>
+                                <NavLink href="/about" style={navStyle} className={styles['nav-item']}>ABOUT</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/contact-us" style={navStyle} className={styles['nav-item']}>Contact Us</NavLink>
+                                <NavLink href="https://tiltify.com/qweerty-gamers" style={navStyle} className={styles['nav-item']}>DONATE</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/contact-us" style={navStyle} className={styles['nav-item']}>CONTACT US</NavLink>
                             </NavItem>
                     </Nav>
                 </Collapse>
