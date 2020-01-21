@@ -51,6 +51,15 @@ class Navigation extends Component {
             fontFamily: 'Bungee',
             textDecoration: 'none'
         }
+
+        const donateNavStyle = {
+            color: '#C4D759',
+            fontFamily: 'Bungee',
+            textDecoration: 'none',
+            border: '2px solid #C4D759',
+            boxSizing: 'border-box',
+            borderRadius: '13px'
+        }
     
         return (
             <div>
@@ -69,10 +78,10 @@ class Navigation extends Component {
                                 <NavLink href="/about" style={navStyle} className={styles['nav-item']}>ABOUT</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://tiltify.com/qweerty-gamers" style={navStyle} className={styles['nav-item']}>DONATE</NavLink>
+                                <NavLink href="/contact-us" style={navStyle} className={styles['nav-item']}>CONTACT US</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/contact-us" style={navStyle} className={styles['nav-item']}>CONTACT US</NavLink>
+                                <NavLink href="https://tiltify.com/qweerty-gamers" style={donateNavStyle} className={styles['nav-item']}>DONATE</NavLink>
                             </NavItem>
                     </Nav>
                 </Collapse>
