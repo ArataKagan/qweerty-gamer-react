@@ -21,6 +21,7 @@ row {
 .social-icons a {
     padding-top: 0px;
     padding-bottom: 12px;
+    padding-right: 17px;
 }
 
 @media only screen and (max-width: 600px){
