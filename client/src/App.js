@@ -8,6 +8,7 @@ import About from './components/About/about';
 import Member from './components/About/Member/member';
 import ContactUs from './components/ContactUs/contact-us';
 import PrivacyPolicy from './components/Footer/PrivacyPolicy/privacy-policy';
+import Login from './components/Login/login';
 import ReactGA from 'react-ga';
 
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
           <Route path='/member' component={ Member } />
           <Route path='/privacy-policy' component={ PrivacyPolicy } />
           <Route path='/contact-us' component={ ContactUs } />
+          <Route path='/login' component={Login} />
         </main>
         
         <Footer />
