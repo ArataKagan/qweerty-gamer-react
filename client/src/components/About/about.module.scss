@@ -1,5 +1,7 @@
 $primaryFontColor: #505050;
-
+.about-main {
+    text-align: center;
+}
 .about-image {
     height: 40vh;
     padding-top: 30px;
@@ -22,14 +24,14 @@ $primaryFontColor: #505050;
 .about-paragraph {
     color: $primaryFontColor;
     /* margin: 40px; */
-    font-family: 'Open Sans', sans-serif;
-    padding-left: 30px;
-    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.about-second-half {
-    background-color: #eee;
-}
 
 h3 {
     padding-top: 30px;
