@@ -29,7 +29,6 @@ class MemberProfile extends Component {
     handleClose(){this.setState({show: false})}
 
     handleShow(item){
-        console.log('inside handleShow: ', item);
         this.setState({
             show: true,
             memberName: item.name,
