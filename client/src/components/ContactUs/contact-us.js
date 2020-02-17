@@ -71,10 +71,8 @@ class ContactUs extends Component {
     render(){
         return(
             <div>
-                <div className={style['contact-us-image']}>
-                </div>
                 <div className={style['contact-us-main']}>
-                    <h1 className={style['h1']}>Contact Us</h1>
+                    <p className={style['get-in-touch']}>GET IN TOUCH</p>
                     {/* <div>
                         <div className='row'>
                             <div className='col'>
@@ -109,6 +107,7 @@ class ContactUs extends Component {
                     <div className={style['email-address']}>
                         ray@qweertygamers.org 
                     </div>
+                    <div className={style['contact-us-image']}></div>
                 </div>
             </div>
         )

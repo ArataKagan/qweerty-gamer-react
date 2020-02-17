@@ -11,6 +11,7 @@
 
 .contact-us-main {
     background-color: #eee;
+    text-align: center;
 }
 
 .form-main {
@@ -18,22 +19,26 @@
     border-radius: 5px;
 }
 
-.h1 {
-    color: #505050;
-    padding: 30px;
-    font-family: 'Archivo Black', sans-serif;
+.get-in-touch {
+    padding: 10px;
+    font-size: 4vw;
+    font-family: 'Bungee', cursive;
+    letter-spacing: 12%;
+    text-shadow: -1px 0 #553FBE, 0 1px #553FBE, 6px 0 #553FBE, 0 -1px #553FBE;
+    color: #ffffff;
 }
 
 .text {
-    color: #505050;
+    color: #000;
     padding: 30px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
 }
 
 .email-address {
-    font-size: 20px;
-    color: #505050;
+    font-size: 3vw;
+    color: #000;
     padding: 10px;
-    padding-bottom: 30px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Bungee', cursive;
 }
