@@ -1,3 +1,11 @@
-event-data-outer {
-    background-color: #eee;
+.event-data-outer {
+    background-color: #000;
+    text-align:center;
+    width: 700px;
+    right: 10px;
+}
+
+.event-data-inner {
+    color: white;
+    
 }
