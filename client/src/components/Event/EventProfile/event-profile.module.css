@@ -1,8 +1,23 @@
+
 .event-data-outer {
-    background-color: #000;
+     /* Background Gradient for Complementary Colors */
+        background-color: #FFFFFF;
+        /* For WebKit (Safari, Chrome, etc) */
+        background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#D0D2FF), to(#FFFFFF)) no-repeat;
+        /* Mozilla,Firefox/Gecko */
+        background: #FFFFFF -moz-linear-gradient(top, #D0D2FF, #FFFFFF) no-repeat;
+        /* IE 5.5 - 7 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D0D2FF, endColorstr=#FFFFFF) no-repeat;
+        /* IE 8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D0D2FF, endColorstr=#D0D2FF)" no-repeat;
+    
+    
     text-align:center;
-    width: 700px;
-    right: 10px;
+    width: 900px;
+    position: absolute;
+    left: 150px;
+    top: 100%;
+    
 }
 
 .event-data-inner {

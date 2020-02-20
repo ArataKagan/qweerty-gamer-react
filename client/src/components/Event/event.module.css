@@ -1,3 +1,7 @@
+.outer {
+    text-align: center;
+}
+
 .event-image {
     background-size: cover;
     height: 55vh;
@@ -18,14 +22,18 @@
     letter-spacing: 12%;
     text-shadow: -1px 0 #553FBE, 0 1px #553FBE, 6px 0 #553FBE, 0 -1px #553FBE;
     color: #ffffff;
-
 }
 
-.event-main {
+.event-message {
     font-size: 30px;
     height: 90vh;
     color: #505050;
     font-family: 'Archivo Black', sans-serif;
+}
+
+.event-profile-outer {
+    height: 50vh;
+    background-color: #553FBE;
 }
 
 .pokego-event-0915 {

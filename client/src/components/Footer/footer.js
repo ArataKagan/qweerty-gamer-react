@@ -27,9 +27,11 @@ class Footer extends Component {
                                 </div>
                             </div>
                       </div>
+                      <div className={styles['row']}>
+                            <p style={pStyle}>CONNECT WITH US</p>
+                      </div>
                       <div className={styles["social-icons"]} style={{flex: 0, paddingTop: '20px'}}>
                             <div className="d-flex flex-row bd-highlight mb-3 social-icons">
-                                <p style={pStyle}>CONNECT WITH US</p>
                                 <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>
                                 <a><FontAwesomeIcon icon={faInstagram} size="2x" color="#eee" /></a>
                                 <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#eee" /></a>
