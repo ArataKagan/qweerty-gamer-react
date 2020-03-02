@@ -1,26 +1,26 @@
 
 .event-data-outer {
      /* Background Gradient for Complementary Colors */
-        background-color: #FFFFFF;
-        /* For WebKit (Safari, Chrome, etc) */
-        background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#D0D2FF), to(#FFFFFF)) no-repeat;
-        /* Mozilla,Firefox/Gecko */
-        background: #FFFFFF -moz-linear-gradient(top, #D0D2FF, #FFFFFF) no-repeat;
-        /* IE 5.5 - 7 */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D0D2FF, endColorstr=#FFFFFF) no-repeat;
-        /* IE 8 */
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D0D2FF, endColorstr=#D0D2FF)" no-repeat;
-    
-    
-    text-align:center;
-    width: 900px;
-    position: absolute;
-    left: 150px;
-    top: 100%;
-    
+    background-image:  linear-gradient(rgba(85, 63, 190, 0.25) 0%, rgba(255, 255, 255, 0) 46.35%), linear-gradient(rgba(241, 97, 98, 0.25) 22.92%, rgba(255, 255, 255, 0) 100%);
+    width: 1200px;
+    height: 700px;
+    left: calc(50% - 1200px/2);
+    position: relative;
 }
 
 .event-data-inner {
     color: white;
-    
+}
+
+.main-text-outer {
+    position: relative;
+
+}
+
+.main-text-inner {
+    position: absolute;
+    font-family: 'Bungee', cursive;
+    text-align: left;
+    padding-left: 80px;
+    font-size: 3vw;
 }

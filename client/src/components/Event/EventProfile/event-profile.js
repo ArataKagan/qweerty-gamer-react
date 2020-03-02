@@ -21,7 +21,9 @@ class EventProfile extends Component {
     render(){
         return(
             <div className={styles["event-data-outer"]}>
-                <p>UPCOMING EVENTS</p>
+                <div className={styles["main-text-outer"]}>
+                    <p className={styles["main-text-inner"]}>UPCOMING EVENTS</p>
+                </div>
                 {this.state.eventData.map((item, index) => {
                         return(
                             <div>
