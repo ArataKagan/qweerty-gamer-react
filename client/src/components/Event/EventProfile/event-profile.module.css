@@ -1,11 +1,12 @@
 
 .event-data-outer {
      /* Background Gradient for Complementary Colors */
+    
     background-image:  linear-gradient(rgba(85, 63, 190, 0.25) 0%, rgba(255, 255, 255, 0) 46.35%), linear-gradient(rgba(241, 97, 98, 0.25) 22.92%, rgba(255, 255, 255, 0) 100%);
-    width: 1200px;
+    width: 90vw;
     height: 700px;
-    left: calc(50% - 1200px/2);
-    position: relative;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .event-data-inner {
@@ -24,3 +25,5 @@
     padding-left: 80px;
     font-size: 3vw;
 }
+
+@media only screen and (max-width: )
