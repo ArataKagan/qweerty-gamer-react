@@ -7,23 +7,26 @@
     height: 700px;
     text-align: center;
     margin: 0 auto;
+    /* position: relative; */
 }
 
 .event-data-inner {
     color: white;
 }
 
-.main-text-outer {
-    position: relative;
+.data {
+   
 
+}
+
+.main-text-outer {
+    
 }
 
 .main-text-inner {
-    position: absolute;
+    
     font-family: 'Bungee', cursive;
     text-align: left;
     padding-left: 80px;
-    font-size: 3vw;
+    font-size: 50px;
 }
-
-@media only screen and (max-width: )
