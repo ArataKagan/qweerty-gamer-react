@@ -4,18 +4,23 @@
     
     background-image:  linear-gradient(rgba(85, 63, 190, 0.25) 0%, rgba(255, 255, 255, 0) 46.35%), linear-gradient(rgba(241, 97, 98, 0.25) 22.92%, rgba(255, 255, 255, 0) 100%);
     width: 90vw;
-    height: 700px;
-    text-align: center;
+    height: 110vh;
+    /* text-align: center; */
     margin: 0 auto;
     /* position: relative; */
 }
 
 .event-data-inner {
-    color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item-description {
+    
 }
 
 .data {
-   
+   padding: 30px;
 
 }
 
@@ -30,3 +35,25 @@
     padding-left: 80px;
     font-size: 50px;
 }
+
+.item-title {
+    font-family: 'Bungee', cursive;
+}
+
+.item-venue {
+    font-style: italic;
+}
+
+.item-address1 {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+.item-address2 {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+

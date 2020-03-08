@@ -1,6 +1,7 @@
 export default [
     {
         id: 1,
+        image: require('./pokemon-go.jpg'),
         title: "Pokemon Go Community Event",
         date: "Saturday, February 28, 2020",
         time: "12PM - 3PM",
@@ -10,6 +11,7 @@ export default [
     },
     {
         id: 2,
+        image: require('./pokemon-go.jpg'),
         title: "Pokemon Go Community Event",
         date: "Saturday, March 28, 2020",
         time: "12PM - 3PM",
