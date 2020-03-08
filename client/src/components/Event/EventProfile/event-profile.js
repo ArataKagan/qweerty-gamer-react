@@ -19,6 +19,7 @@ class EventProfile extends Component {
     }
 
     render(){
+
         return(
             <div className={styles["event-data-outer"]}>
                 <p className={styles["main-text-inner"]}>UPCOMING EVENTS</p>
@@ -28,7 +29,7 @@ class EventProfile extends Component {
                             <div className={styles["data"]}>
                                 <div className="row">
                                     <div className="col">
-                                        <img key={index - 1} src={item.image} style={{maxWidth: '500px', height: '260px', objectFit: 'cover'}}/>
+                                        <img key={index - 1} src={item.image} style={{maxWidth: '80vw', height: '30vh', objectFit: 'cover'}}/>
                                     </div>
                                     <div className="col">
                                         <div className={styles["item-description"]}>

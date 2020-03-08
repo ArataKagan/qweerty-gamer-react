@@ -21,11 +21,16 @@
 
 .data {
    padding: 30px;
-
 }
 
 .main-text-outer {
     
+}
+
+.img-size {
+    width: '500px';
+    height: '260px';
+    object-fit: 'cover';
 }
 
 .main-text-inner {
@@ -56,4 +61,10 @@
     letter-spacing: 0.03em;
 }
 
+
+@media screen and (max-width: 729px){
+    .event-data-outer {
+        height: 150vh;
+    }
+}
 
