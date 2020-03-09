@@ -12,9 +12,9 @@ class Footer extends Component {
 
         return(
             <div className={styles['footer']}>
-                <div className="container">
-                   <div className="row">
-                      <div className='col'>
+                <div className={styles["footer-container"]}>
+                   <div className="d-flex bd-highlight">
+                      <div className="p-2 flex-fill bd-highlight" style={{textAlign:"center"}}>
                             <div className={styles['row']}>
                                 <img src={require('./../../assets/images/qg_logo_png.png')} alt='logo' width='200px'/>
                                 <div className="d-flex flex-column bd-highlight mb-3">
@@ -27,16 +27,20 @@ class Footer extends Component {
                                 </div>
                             </div>
                       </div>
-                      <div className={styles['row']}>
-                            <p style={pStyle}>CONNECT WITH US</p>
+                      <div className="p-2 flex-fill bd-highlight">
+                            <div className={styles['row']}>
+                                    <p style={pStyle}>CONNECT WITH US</p>
+                            </div>
                       </div>
-                      <div className={styles["social-icons"]} style={{flex: 0, paddingTop: '20px'}}>
-                            <div className="d-flex flex-row bd-highlight mb-3 social-icons">
-                                <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>
-                                <a><FontAwesomeIcon icon={faInstagram} size="2x" color="#eee" /></a>
-                                <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#eee" /></a>
-                                <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/></a>
-                                <a><FontAwesomeIcon icon={faDiscord} size="2x" color="#eee" /></a>
+                      <div className="p-2 flex-fill bd-highlight">
+                            <div className={styles["social-icons"]} style={{flex: 0, paddingTop: '20px'}}>
+                                    <div className="d-flex flex-row bd-highlight mb-3 social-icons">
+                                        <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>
+                                        <a><FontAwesomeIcon icon={faInstagram} size="2x" color="#eee" /></a>
+                                        <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#eee" /></a>
+                                        <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/></a>
+                                        <a><FontAwesomeIcon icon={faDiscord} size="2x" color="#eee" /></a>
+                                    </div>
                             </div>
                       </div>
                    </div>

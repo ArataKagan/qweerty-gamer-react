@@ -6,13 +6,16 @@
     font-family: 'Bungee', cursive;
 }
 
+.footer-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 row {
     padding: 30px;
+    text-align: center;
 }
-/* 
-.social-media {
-    flex: 0;
-} */
+
 
 .footer-list:hover {
     color: gray !important;

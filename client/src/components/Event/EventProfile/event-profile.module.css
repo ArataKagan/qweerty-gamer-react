@@ -15,26 +15,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.item-description {
-    
-}
 
 .data {
    padding: 30px;
 }
 
-.main-text-outer {
-    
-}
-
-.img-size {
-    width: '500px';
-    height: '260px';
-    object-fit: 'cover';
-}
 
 .main-text-inner {
-    
     font-family: 'Bungee', cursive;
     text-align: left;
     padding-left: 80px;
