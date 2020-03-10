@@ -11,9 +11,30 @@
     margin-right: 30px;
 }
 
-row {
+.logo-inner {
+    text-align: center;
+}
+
+.connect-with-us-outer {
+    position: relative;
+}
+
+.row {
     padding: 30px;
     text-align: center;
+    
+}
+
+.privacy-policy {
+    color: #eee !important;
+    font-weight: bolder;
+}
+
+.connect-with-us {
+    padding-right: 60px;
+    position: absolute;
+    top: 30%;
+    white-space: nowrap;
 }
 
 
