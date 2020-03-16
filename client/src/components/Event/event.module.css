@@ -15,10 +15,10 @@
 .main-text {
     text-align:right;
     padding-right: 80px;
-    font-size: 5vw;
+    font-size: 70px;
     font-family: 'Bungee', cursive;
     font-weight: normal;
-    white-space: nowrap;
+    white-space: normal;
     letter-spacing: 12%;
     text-shadow: -1px 0 #553FBE, 0 1px #553FBE, 6px 0 #553FBE, 0 -1px #553FBE;
     color: #ffffff;
@@ -65,5 +65,35 @@
     
     .pokego-event-0915 {
         height: 180px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .main-text{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width:480px){
+    .main-text{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .main-text{
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .main-text{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .main-text{
+        font-size: 70px;
     }
 }
