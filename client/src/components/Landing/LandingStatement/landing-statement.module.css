@@ -25,6 +25,10 @@
     .landing-statement{
         font-size: 40px;
     }
+
+    .main {
+        height: 50vh;
+    }
 }
 
 @media only screen and (min-width:480px){
@@ -33,20 +37,43 @@
     }
 }
 
+/* @media only screen and (max-width: 593px){
+    .main {
+        height: 40vh;
+    }
+} */
+
 @media only screen and (min-width:768px){
     .landing-statement{
         font-size: 55px;
     }
 }
 
-@media only screen and (min-width:992px){
+@media only screen and (max-width:992px){
     .landing-statement{
         font-size: 60px;
     }
+
+    .main{
+        height: 30vh;
+    }
 }
+
+@media only screen and (max-width: 1125px) and (min-width: 992px){
+    .main {
+        height: 30vh;
+    }
+}
+
 
 @media only screen and (min-width: 1200px){
     .landing-statement{
         font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 1312px) and (min-width: 1200px){
+    .main {
+        height: 35vh;
     }
 }

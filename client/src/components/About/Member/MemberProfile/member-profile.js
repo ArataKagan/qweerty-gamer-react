@@ -48,7 +48,7 @@ class MemberProfile extends Component {
                         return(
                             <div className='row' key={index}>
                             <div className='col-xs' key={index} style={{padding: '40px'}}>
-                                <img  key={index + 1} src={item.image} style={{maxWidth: '200px', height: '200px', objectFit: 'cover'}} onClick={() => this.handleShow(item)}/>
+                                <img  key={index + 1} src={item.image} style={{maxWidth: '200px', height: '200px', objectFit: 'cover', cursor: 'pointer'}} onClick={() => this.handleShow(item)}/>
                                 <p key={index + 2}>{item.name}</p>
                                 <p key={index + 3}>{item.title}</p>
                                 {/* <MemberModal item={item} key={index} show={this.state.show} onHide={this.handleClose}/> */}
