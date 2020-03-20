@@ -40,8 +40,9 @@ class Footer extends Component {
                                         <a href='https://www.facebook.com/groups/qweertygamers/'><FontAwesomeIcon icon={faFacebook} size="2x" color="#eee" /></a>
                                         <a href='https://www.instagram.com/qweertygamers/'><FontAwesomeIcon icon={faInstagram} size="2x" color="#eee" /></a>
                                         <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faTwitter} size="2x" color="#eee" /></a>
-                                        <a href='https://twitter.com/qweertygamers'><FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/></a>
+                                        <a href='https://www.meetup.com/qweertygamers'><FontAwesomeIcon icon={faMeetup} size="2x" color="#eee"/></a>
                                         <a href='https://www.twitch.tv/qweertygamers'><FontAwesomeIcon icon={faTwitch} size="2x" color="#eee" /></a>
+                                        <a href='https://discord.gg/wjg4JUC'><FontAwesomeIcon icon={faDiscord} size="2x" color="#eee" /></a>
                                     </div>
                             </div>
                       </div>
