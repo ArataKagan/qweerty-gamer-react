@@ -1,14 +1,14 @@
 .mission-outer {
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 80vh;
     position: relative;
   }
   
   .mission-inner {
     position: absolute;
-    top: 20%;
-    padding: 50px;
+    top: 10%;
+    padding: 30px;
   }
   
   .mission-inner .statement-1 {
