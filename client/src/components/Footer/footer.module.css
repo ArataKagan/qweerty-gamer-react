@@ -4,45 +4,32 @@
     background-color: #1d1e22;
     color: white; 
     font-family: 'Bungee', cursive;
+    flex-wrap:wrap;
 }
 
-.footer-container {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.logo-inner {
-    text-align: center;
-}
-
-.connect-with-us-outer {
-    position: relative;
-}
-
-.row {
+.first-row {
     padding: 30px;
     text-align: center;
-    
 }
+
+.second-row {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.third-row {
+    padding-top: 70px;
+    text-align: center;
+}
+
 
 .privacy-policy {
     color: #eee !important;
     font-weight: bolder;
 }
 
-.connect-with-us {
-    padding-right: 60px;
-    position: absolute;
-    top: 30%;
-    white-space: nowrap;
-}
 
-
-.footer-list:hover {
-    color: gray !important;
-}
-
-.social-icons a {
+.third-row a {
     padding-top: 0px;
     padding-bottom: 12px;
     padding-right: 17px;
