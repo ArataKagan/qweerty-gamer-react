@@ -11,12 +11,12 @@ $primaryFontColor: #505050;
     position: absolute;
     display: inline-block;
     font-family: 'Bungee', cursive;
-    font-size: 4vw;
+    font-size: 70px;
     font-weight: normal;
     white-space: nowrap;
     letter-spacing: 34%;
     top: 2%;
-    left: 35%;
+    left: 25%;
     text-shadow: -1px 0 #553FBE, 0 1px #553FBE, 6px 0 #553FBE, 0 -1px #553FBE;
     color: #ffffff;
 }
@@ -42,4 +42,47 @@ $primaryFontColor: #505050;
     margin: 0 auto;
     height: 100%;
     width: auto;
+}
+
+@media only screen and (max-width:480px){
+    .main-text{
+        font-size: 40px;
+        left: 12%;
+        top: -1%;
+    }
+}
+
+@media only screen and (min-width:480px){
+    .main-text{
+        font-size: 50px;
+        left: 12%;
+        top: -1%;
+    }
+}
+
+@media only screen and (min-width:620px){
+    .main-text{
+        left: 20%;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .main-text{
+        font-size: 55px;
+        left: 24%;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .main-text{
+        font-size: 60px;
+        left: 25%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .main-text{
+        font-size: 70px;
+        left: 27%;
+    }
 }

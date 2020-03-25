@@ -6,10 +6,7 @@
     background-size: cover;
     height: 55vh;
     position: relative;
-    background-image: 
-        linear-gradient(
-            #fcedd923, rgb(199, 199, 199)),
-            url(../../assets/images/event-image.jpg);
+    background-image: url(../../assets/images/event-image.jpg);
 }
 
 .main-text {

@@ -1,26 +1,23 @@
 .main {
-    position: relative;
+    /* position: relative; */
     height: 15vh;
-    background-size: cover;
-    background-position: cover;
 }
 
 .landing-statement {
-    display: block;
-    position: absolute;
+    
+    /* position: absolute; */
     font-family: 'Bungee', cursive;
-    font-size: 70px;
+    font-size: 4.5vw;
     font-weight: normal;
-    white-space: normal;
-    letter-spacing: 12%;
-    top: 15%;
-    left: 6%;
+    white-space: nowrap; 
+    letter-spacing: 0.10em;
+    padding-top: 10px;
+    /* left: 6%; */
     text-shadow: -1px 0 #553FBE, 0 1px #553FBE, 6px 0 #553FBE, 0 -1px #553FBE;
     color: #ffffff;
-    
 }
 
-
+/* 
 @media only screen and (max-width:480px){
     .landing-statement{
         font-size: 40px;
@@ -35,7 +32,7 @@
     .landing-statement{
         font-size: 50px;
     }
-}
+} */
 
 /* @media only screen and (max-width: 593px){
     .main {
@@ -43,7 +40,7 @@
     }
 } */
 
-@media only screen and (min-width:768px){
+/* @media only screen and (min-width:768px){
     .landing-statement{
         font-size: 55px;
     }
@@ -74,6 +71,6 @@
 
 @media only screen and (max-width: 1312px) and (min-width: 1200px){
     .main {
-        height: 35vh;
+       
     }
-}
+} */

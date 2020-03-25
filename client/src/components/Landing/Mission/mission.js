@@ -11,7 +11,6 @@ function mission(){
                     <p className="p-2 bd-highlight"><div className={styles["statement-1"]}>WHAT WE DO</div></p>
                     <p className="p-2 bd-highlight statement-2"><div className={styles["statement-2"]}>Qweerty Gamers provides a safe platform for both developers and LGBTQ Gamers to connect and learn from each other. We offer developers access to the unique perspectives of dedicated LBGTQ Gamers, consultations on queer representation, focus groups on game development, as well as programs and workshops to develop skills and prepare LGBTQ Gamers for careers within the industry.</div></p>
                     <p className="p-2 bd-highlight statement-2"><div className={styles["statement-2"]}>Whether you’re just a fan of gamers or work in the industry, at its core, Qweerty puts <b>Gaming First</b>.</div></p>
-
                 </div>
             </div>
         </div>
