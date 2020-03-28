@@ -33,11 +33,48 @@
     }
   }
 
-  @media only screen and (min-device-width: 375px) 
+  /* @media only screen and (max-width: 480px){
+    .mission-outer {
+      height: 160vh;
+    }
+  } */
+
+  @media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+and (orientation : portrait) {.mission-outer {height: 160vh;} }
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+and (orientation : landscape) {.mission-outer {height: 240vh;} }
+
+
+
+  /* @media only screen 
+    and (min-width: 375px)
+    and (max-width: 667px){
+    .mission-outer {
+      height: 160vh;
+    }
+  }
+
+  @media only screen 
+  and (min-width: 375px)
+  and (max-width: 667px)
+  and (orientation: portrait){
+  .mission-outer {
+    height: 100vh;
+  }
+} */
+
+
+
+  /* @media only screen and (min-device-width: 375px) 
                    and (max-device-width: 667px) 
                    and (orientation: landscape) {
                     .mission-outer {
-                      height: 130vh;
+                      height: 150vh;
                     }
 
-                   }
+                   } */
