@@ -10,7 +10,7 @@ export default [
   {
     id: 2,
     name: 'Chris Ruben Avila',
-    title: 'Treasurer and CFO',
+    title: 'Treasurer and CPO',
     description:
       "Christopher (Chris) Avila has been a volunteer for Qweerty Gamers since January 2019. Along with volunteering at various events, Chris is also the Qweerty seamstress, he designs and creates apparel and accessories for volunteers and for merchandise. He/she/they identify as non-binary and responds to all pronouns as well as considers themselves as queer. He graduated from Citrus College in June 2019 with degrees in business administration, social and behavioral science, biological and physical science, language arts and mathematics. When not helping out with Qweerty or in class, he drives for Lyft part-time or volunteers at other organizations such as the LA LGBT Center or Kitten Rescue. He is currently training to run in the 2020 LA marathon to raise money for Kitten Rescue, a no-kill shelter for cats run by volunteers who work to find forever loving homes for cats and kittens. He's a huge Disney fan and takes any opportunity to visit the parks. Having been inspired by Disney's approach to their local cat community, he aspires to one day start his own non-profit no-kill cat sanctuary.",
     image: require('../../../../assets/images/member-profile-image/chris.jpg')
