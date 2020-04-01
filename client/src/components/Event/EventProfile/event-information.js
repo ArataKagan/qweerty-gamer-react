@@ -6,7 +6,8 @@ export default [
     date: 'Sunday, April 5, 2020',
     time: '7 PM – 9 PM (PST)',
     venue: 'Online',
-    address1: 'https://www.twitch.tv/qweertygamers',
-    address2: ''
+    address1: '',
+    address2: '',
+    url: 'https://www.twitch.tv/qweertygamers'
   }
 ];

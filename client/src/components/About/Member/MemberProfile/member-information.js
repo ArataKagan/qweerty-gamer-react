@@ -9,6 +9,14 @@ export default [
   },
   {
     id: 2,
+    name: 'Chandler Poling',
+    title: 'Vice President',
+    description:
+      'Chandler Poling is the Co-Founder of White Bear PR, a Public Relations firm specializing in Publicity for Composers, Songwriters, Music Supervisors, and Film & Music Festivals around the world.  Throughout his career, Chandler has run successful Oscar, Golden Globe, Grammy, BAFTA and Emmy campaigns securing nominations and wins for his clients, including the history-making campaign for Hildur Gudnadóttir and her scores from Joker and Chernobyl.  His clients have been featured in national and international publications, such as Time Magazine, Vanity Fair, New York Times, Variety, Hollywood Reporter, The Guardian, LA Times, and Rolling Stone Magazine to name just a few. He created the first-ever composer-focused panel at Comic-Con San Diego, the World’s Largest Pop Culture Convention.',
+    image: require('../../../../assets/images/member-profile-image/Chandler.jpg')
+  },
+  {
+    id: 3,
     name: 'Chris Ruben Avila',
     title: 'Treasurer and CPO',
     description:
@@ -16,7 +24,7 @@ export default [
     image: require('../../../../assets/images/member-profile-image/chris.jpg')
   },
   {
-    id: 3,
+    id: 4,
     name: 'Joe Song',
     title: 'Graphic Designer',
     description:
@@ -24,17 +32,9 @@ export default [
     image: require('../../../../assets/images/member-profile-image/joe.jpg')
   },
   {
-    id: 4,
+    id: 5,
     name: 'Arata Kagan',
     title: 'Web Developer',
     image: require('../../../../assets/images/member-profile-image/arata.jpeg')
-  },
-  {
-    id: 5,
-    name: 'Chandler Poling',
-    title: 'Staff Volunteer',
-    description:
-      'Chandler Poling is the Co-Founder of White Bear PR, a Public Relations firm specializing in Publicity for Composers, Songwriters, Music Supervisors, and Film & Music Festivals around the world.  Throughout his career, Chandler has run successful Oscar, Golden Globe, Grammy, BAFTA and Emmy campaigns securing nominations and wins for his clients, including the history-making campaign for Hildur Gudnadóttir and her scores from Joker and Chernobyl.  His clients have been featured in national and international publications, such as Time Magazine, Vanity Fair, New York Times, Variety, Hollywood Reporter, The Guardian, LA Times, and Rolling Stone Magazine to name just a few. He created the first-ever composer-focused panel at Comic-Con San Diego, the World’s Largest Pop Culture Convention.',
-    image: require('../../../../assets/images/member-profile-image/Chandler.jpg')
   }
 ];

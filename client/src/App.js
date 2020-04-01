@@ -13,8 +13,8 @@ import ReactGA from 'react-ga';
 
 class App extends Component {
   render() {
-    function initializeReactGA(){
-      ReactGA.initialize('UA-150899979-1');
+    function initializeReactGA() {
+      ReactGA.initialize('UA-162367118-1');
       ReactGA.pageview('/');
     }
     return (
@@ -23,15 +23,15 @@ class App extends Component {
           <Navigation />
         </nav>
         <main>
-          <Route exact path='/' component={ Landing } />
-          <Route path="/event" component={ Event } />
-          <Route path='/about' component={ About } />
-          <Route path='/member' component={ Member } />
-          <Route path='/privacy-policy' component={ PrivacyPolicy } />
-          <Route path='/contact-us' component={ ContactUs } />
+          <Route exact path='/' component={Landing} />
+          <Route path='/event' component={Event} />
+          <Route path='/about' component={About} />
+          <Route path='/member' component={Member} />
+          <Route path='/privacy-policy' component={PrivacyPolicy} />
+          <Route path='/contact-us' component={ContactUs} />
           <Route path='/login' component={Login} />
         </main>
-        
+
         <Footer />
       </div>
     );
