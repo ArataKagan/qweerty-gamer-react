@@ -7,7 +7,7 @@
     ),
     linear-gradient(rgba(241, 97, 98, 0.25) 22.92%, rgba(255, 255, 255, 0) 100%);
   width: 90vw;
-  height: 110vh;
+  height: 230vh;
   /* text-align: center; */
   margin: 0 auto;
   /* position: relative; */
@@ -43,9 +43,14 @@
   letter-spacing: 0.03em;
 }
 
+.animal-crossing {
+  float: left;
+  padding: 50px;
+}
+
 @media screen and (max-width: 729px) {
   .event-data-outer {
-    height: 150vh;
+    height: 250vh;
   }
 }
 
