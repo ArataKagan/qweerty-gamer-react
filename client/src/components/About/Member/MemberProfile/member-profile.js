@@ -75,17 +75,6 @@ class MemberProfile extends Component {
                       </Modal.Header>
                       <Modal.Body>
                         <Container>
-                          {/* <Row className="show-grid">
-                                                <Col xs={12} md={8}>
-                                                    {this.state.memberTitle}
-                                                </Col>
-                                                <Col xs={12} md={8}>
-                                                    {this.state.memberDescription}
-                                                </Col>
-                                                <Col xs={12} md={8}>
-                                                    <img src={this.state.memberImage} style={{width: '150px'}} />
-                                                </Col>
-                                            </Row> */}
                           <div className='row'>
                             <div className='col'>
                               <div style={{ fontSize: '20px' }}>

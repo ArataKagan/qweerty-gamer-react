@@ -18,13 +18,6 @@ class EventProfile extends Component {
     };
   }
 
-  componentDidMount() {
-    const script = document.createElement('script');
-    script.src = 'https://widget.gleamjs.io/e.js';
-    script.async = true;
-    document.body.appendChild(script);
-  }
-
   render() {
     return (
       <div className={styles['event-data-outer']}>
@@ -73,15 +66,6 @@ class EventProfile extends Component {
                       </a>
                     </div>
                   </div>
-                </div>
-                <div className={styles['animal-crossing']}>
-                  <a
-                    className='e-widget no-button'
-                    href='https://gleam.io/rgKvy/qweerty-gamers-animal-crossing-artprint-giveaway'
-                    rel='nofollow'
-                  >
-                    Qweerty Gamers Animal Crossing Artprint Giveaway
-                  </a>
                 </div>
               </div>
             );

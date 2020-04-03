@@ -6,8 +6,8 @@
       rgba(255, 255, 255, 0) 46.35%
     ),
     linear-gradient(rgba(241, 97, 98, 0.25) 22.92%, rgba(255, 255, 255, 0) 100%);
-  width: 90vw;
-  height: 230vh;
+  width: 70vw;
+  height: 170vh;
   /* text-align: center; */
   margin: 0 auto;
   /* position: relative; */
@@ -41,11 +41,6 @@
   font-style: italic;
   font-weight: 300;
   letter-spacing: 0.03em;
-}
-
-.animal-crossing {
-  float: left;
-  padding: 50px;
 }
 
 @media screen and (max-width: 729px) {
@@ -93,6 +88,12 @@
   .main-text-inner {
     font-size: 60px;
     padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 1167 px) {
+  .event-data-outer {
+    height: 100vh;
   }
 }
 
