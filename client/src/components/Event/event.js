@@ -23,10 +23,10 @@ function Event() {
         <div className='col'>
           <a
             className='e-widget no-button'
-            href='https://gleam.io/rgKvy/qweerty-gamers-animal-crossing-artprint-giveaway'
+            href='https://gleam.io/ZdrCd/qweerty-gamers-nintendo-switch-giveaway'
             rel='nofollow'
           >
-            Qweerty Gamers Animal Crossing Artprint Giveaway
+            Qweerty Gamers' Nintendo Switch Giveaway
           </a>
         </div>
       </div>
