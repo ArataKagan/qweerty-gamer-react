@@ -33,6 +33,13 @@ export default [
   },
   {
     id: 5,
+    name: 'Kaitlin Blagg',
+    title: 'Staff Volunteer',
+    description: '',
+    image: require('../../../../assets/images/member-profile-image/kaitlin.jpeg')
+  },
+  {
+    id: 6,
     name: 'Arata Kagan',
     title: 'Web Developer',
     image: require('../../../../assets/images/member-profile-image/arata.jpeg')
