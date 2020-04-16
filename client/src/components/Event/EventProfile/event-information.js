@@ -1,9 +1,9 @@
 export default [
   {
     id: 1,
-    image: require('./ArtJam.png'),
+    image: require('./artjam2.png'),
     title: 'Art Jam - Free Qweerty Online Class',
-    date: 'Sunday, April 5, 2020',
+    date: 'Sunday, April 19, 2020',
     time: '7 PM – 9 PM (PST)',
     venue: 'Online',
     address1: '',
