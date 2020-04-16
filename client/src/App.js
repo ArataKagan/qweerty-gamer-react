@@ -13,10 +13,6 @@ import ReactGA from 'react-ga';
 
 class App extends Component {
   render() {
-    function initializeReactGA() {
-      ReactGA.initialize('UA-162367118-1');
-      ReactGA.pageview('/');
-    }
     return (
       <div className='App'>
         <nav>
