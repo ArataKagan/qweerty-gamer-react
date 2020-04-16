@@ -10,6 +10,14 @@ import ContactUs from './components/ContactUs/contact-us';
 import PrivacyPolicy from './components/Footer/PrivacyPolicy/privacy-policy';
 import Login from './components/Login/login';
 import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
+
+history.listen(location => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
 
 class App extends Component {
   render() {
@@ -19,13 +27,15 @@ class App extends Component {
           <Navigation />
         </nav>
         <main>
-          <Route exact path='/' component={Landing} />
-          <Route path='/event' component={Event} />
-          <Route path='/about' component={About} />
-          <Route path='/member' component={Member} />
-          <Route path='/privacy-policy' component={PrivacyPolicy} />
-          <Route path='/contact-us' component={ContactUs} />
-          <Route path='/login' component={Login} />
+          <Route history={history}>
+            <Route exact path='/' component={Landing} />
+            <Route path='/event' component={Event} />
+            <Route path='/about' component={About} />
+            <Route path='/member' component={Member} />
+            <Route path='/privacy-policy' component={PrivacyPolicy} />
+            <Route path='/contact-us' component={ContactUs} />
+            <Route path='/login' component={Login} />
+          </Route>
         </main>
 
         <Footer />
