@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 
 class Landing extends Component {
   componentDidMount() {
-    ReactGA.initialize('UA-162367118-1');
+    ReactGA.initialize('UA-150899979-1');
     ReactGA.pageview('/');
   }
   render() {
