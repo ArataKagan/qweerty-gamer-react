@@ -20,7 +20,7 @@ function Event() {
         <div className='col'>
           <EventProfile />
         </div>
-        <div className='col'>
+        {/* <div className='col'>
           <a
             className='e-widget no-button'
             href='https://gleam.io/ZdrCd/qweerty-gamers-nintendo-switch-giveaway'
@@ -28,7 +28,7 @@ function Event() {
           >
             Qweerty Gamers' Nintendo Switch Giveaway
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

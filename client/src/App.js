@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 import Landing from './components/Landing/landing';
@@ -11,31 +11,28 @@ import PrivacyPolicy from './components/Footer/PrivacyPolicy/privacy-policy';
 import Login from './components/Login/login';
 import ReactGA from 'react-ga';
 
-
 ReactGA.initialize('UA-150899979-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
-class App extends Component {
-  render() {
-    return (
+const App = () => (
+  <Router>
+    <Fragment>
       <div className='App'>
-        <nav>
-          <Navigation />
-        </nav>
-        <main>
+        <Navigation />
+        <Switch>
           <Route exact path='/' component={Landing} />
-          <Route path='/event' component={Event} />
-          <Route path='/about' component={About} />
-          <Route path='/member' component={Member} />
-          <Route path='/privacy-policy' component={PrivacyPolicy} />
-          <Route path='/contact-us' component={ContactUs} />
-          <Route path='/login' component={Login} />
-        </main>
+          <Route exact path='/event' component={Event} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/member' component={Member} />
+          <Route exact path='/privacy-policy' component={PrivacyPolicy} />
+          <Route exact path='/contact-us' component={ContactUs} />
+          <Route exact path='/login' component={Login} />
+        </Switch>
 
         <Footer />
       </div>
-    );
-  }
-}
+    </Fragment>
+  </Router>
+);
 
 export default App;
