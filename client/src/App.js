@@ -10,14 +10,7 @@ import ContactUs from './components/ContactUs/contact-us';
 import PrivacyPolicy from './components/Footer/PrivacyPolicy/privacy-policy';
 import Login from './components/Login/login';
 import ReactGA from 'react-ga';
-// import { createBrowserHistory } from 'history';
 
-// const history = createBrowserHistory();
-
-// history.listen(location => {
-//   ReactGA.set({ page: location.pathname });
-//   ReactGA.pageview(location.pathname);
-// });
 
 ReactGA.initialize('UA-150899979-1');
 ReactGA.pageview(window.location.pathname + window.location.search);

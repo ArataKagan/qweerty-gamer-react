@@ -34,8 +34,9 @@ export default [
   {
     id: 5,
     name: 'Kaitlin Blagg',
-    title: 'Staff Volunteer',
-    description: '',
+    title: 'Board Member',
+    description:
+      'Kaitlin Blagg found Qweerty Gamers, during her search of looking for a community she could feel comfortable in. She first took part during the 2019 Overwatch Pride Day, and had since felt an urge to do something more hands on. In January of 2020, she began volunteering with Qweerty at Pokémon Go Community Days and tournaments, and hopes to expand to new venues and events. Kaitlin also has helped create ads and banners to showcase Qweerty events, both online and in-person. Equipped with video game knowledge, she hopes to bring representation to the gaming community as a woman, and to the LGBT community as a Pansexual. When not assisting Qweerty, Kaitlin also works at a bakery in Studio City, CA that consistently donates to organizations and local food banks, for example the Birthday Party Project or the Interfaith Food Pantry. She also likes to brush up her makeup skills and hopes to use them to assist cosplayers re-create their favorite character.',
     image: require('../../../../assets/images/member-profile-image/kaitlin.jpeg')
   },
   {
