@@ -8,7 +8,6 @@ const connectDB = require('./config/db');
 connectDB();
 
 app.use(express.json({ extended: false }));
-app.get('/', (req, res) => res.send('API running'));
 
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
