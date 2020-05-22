@@ -20,6 +20,12 @@
   font-size: 50px;
 }
 
+.event-image {
+  max-width: '50vw';
+  height: '30vh';
+  object-fit: 'cover';
+}
+
 .event-data-inner {
   color: black;
   font-family: 'Roboto', sans-serif;
