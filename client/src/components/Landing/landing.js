@@ -5,10 +5,10 @@ import Mission from './Mission/mission';
 import ReactGA from 'react-ga';
 
 class Landing extends Component {
-  componentDidMount() {
-    ReactGA.initialize('UA-150899979-1');
-    ReactGA.pageview('/');
-  }
+  // componentDidMount() {
+  //   ReactGA.initialize('UA-150899979-1');
+  //   ReactGA.pageview('/');
+  // }
   render() {
     return (
       <div>

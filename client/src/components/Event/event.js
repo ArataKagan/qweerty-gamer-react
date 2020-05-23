@@ -3,12 +3,12 @@ import styles from './event.module.css';
 import EventProfile from './EventProfile/event-profile.js';
 
 function Event() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://widget.gleamjs.io/e.js';
-    script.async = true;
-    document.body.appendChild(script);
-  });
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+  //   script.src = 'https://widget.gleamjs.io/e.js';
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  // });
 
   return (
     <div className={styles['outer']}>

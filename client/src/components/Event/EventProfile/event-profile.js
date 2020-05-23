@@ -34,11 +34,6 @@ class EventProfile extends Component {
                       key={index - 1}
                       src={item.image}
                       className='EventProfile'
-                      // style={{
-                      //   maxWidth: '80vw',
-                      //   height: '30vh',
-                      //   objectFit: 'cover'
-                      // }}
                     />
                   </div>
                   <div className='col'>
