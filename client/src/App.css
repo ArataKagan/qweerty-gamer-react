@@ -7,11 +7,8 @@
   text-align: center;
 }
 
-
-
-
-
-
-
-
- 
+#event-image {
+  max-width: '80vw';
+  height: '30vh';
+  object-fit: 'cover';
+}

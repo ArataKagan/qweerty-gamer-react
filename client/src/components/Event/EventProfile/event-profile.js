@@ -32,6 +32,8 @@ class EventProfile extends Component {
                     <img
                       key={index - 1}
                       src={item.image}
+                      // id={event-img}
+                      // className={styles['event-image']}
                       style={{
                         maxWidth: '80vw',
                         height: '30vh',
