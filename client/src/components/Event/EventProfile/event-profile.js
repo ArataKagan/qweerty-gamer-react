@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import eventData from './event-information';
 import styles from './event-profile.module.css';
+import './EventProfile.css';
 
 class EventProfile extends Component {
   constructor(props) {
@@ -32,13 +33,12 @@ class EventProfile extends Component {
                     <img
                       key={index - 1}
                       src={item.image}
-                      // id={event-img}
-                      // className={styles['event-image']}
-                      style={{
-                        maxWidth: '80vw',
-                        height: '30vh',
-                        objectFit: 'cover'
-                      }}
+                      className='EventProfile'
+                      // style={{
+                      //   maxWidth: '80vw',
+                      //   height: '30vh',
+                      //   objectFit: 'cover'
+                      // }}
                     />
                   </div>
                   <div className='col'>

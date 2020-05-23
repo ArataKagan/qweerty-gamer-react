@@ -1,0 +1,11 @@
+.EventProfile {
+  max-width: 80vw;
+  height: 30vh;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  .EventProfile {
+    height: 17vh;
+  }
+}
