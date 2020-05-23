@@ -34,20 +34,6 @@ class Navigation extends Component {
     });
   }
 
-  // onMouseEnter = (e) => {
-  //    console.log('this is: ', e.target);
-  //    this.setState({
-  //        isHover: e.target
-  //    })
-  // }
-
-  // onMouseLeave = () => {
-  //     console.log('mouse left')
-  //     this.setState({
-  //         isHover: false
-  //     })
-  // }
-
   render() {
     const navStyle = {
       color: '#ffffff',
