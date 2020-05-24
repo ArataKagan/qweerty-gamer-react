@@ -1,12 +1,12 @@
 const express = require('express');
 // const nodemailer = require('nodemailer');
-// const connectDB = require('./config/db');
+const connectDB = require('./config/db');
 const app = express();
 var cors = require('cors');
 const path = require('path');
 
 // Database connection
-// connectDB();
+connectDB();
 
 require('dotenv').config();
 app.use(cors());
