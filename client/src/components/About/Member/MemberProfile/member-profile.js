@@ -4,6 +4,7 @@ import style from '../member.module.scss';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 // import MemberModal from './member-modal';
+import styles from './member-profile.module.scss';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -54,12 +55,7 @@ class MemberProfile extends Component {
                     <img
                       key={index + 1}
                       src={item.image}
-                      style={{
-                        maxWidth: '200px',
-                        height: '200px',
-                        objectFit: 'cover',
-                        cursor: 'pointer'
-                      }}
+                      className={styles['member-image-outer']}
                       onClick={() => this.handleShow(item)}
                     />
                     <p key={index + 2}>{item.name}</p>
@@ -85,7 +81,7 @@ class MemberProfile extends Component {
                             <div className='col'>
                               <img
                                 src={this.state.memberImage}
-                                style={{ width: '300px', height: 'auto' }}
+                                className={styles['member-image-inner']}
                               />
                             </div>
                           </div>

@@ -62,7 +62,7 @@ class Navigation extends Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className='ml-auto' navbar>
+            <Nav className='ml-auto' style={{ textAlign: 'center' }} navbar>
               <NavItem>
                 <NavLink
                   href='/'
