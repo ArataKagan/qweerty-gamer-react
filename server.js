@@ -1,15 +1,16 @@
 const express = require('express');
-// const bodyParser = require('body-parser');
 // const nodemailer = require('nodemailer');
+const connectDB = require('./config/db');
 const app = express();
 var cors = require('cors');
 const path = require('path');
-require('dotenv').config();
 
+// Database connection
+connectDB();
+
+require('dotenv').config();
 app.use(cors());
 
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json({ extended: false }));
 
 app.use(function(req, res, next) {
