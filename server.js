@@ -13,8 +13,8 @@ app.use(cors());
 
 app.use(express.json({ extended: false }));
 
-app.use('/api/users', require('./routes/api/users'));
-app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/users', require('./routes/users'));
+app.use('/api/auth', require('./routes/auth'));
 
 app.use(function(req, res, next) {
   console.log('request', req.url, req.body, req.method);
