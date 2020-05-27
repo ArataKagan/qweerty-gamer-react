@@ -1,9 +1,9 @@
 export default [
   {
     id: 1,
-    image: require('./overwatch-0523.jpg'),
-    title: 'Qweerty Gamers Game Night - Overwatch Anniversary',
-    date: 'Saturday, May 23rd, 2020',
+    image: require('./lol-0530.jpg'),
+    title: 'Qweerty Gamer Night 5/30 - League of Legends',
+    date: 'Saturday, May 30th, 2020',
     time: '7 PM – 9 PM (PST)',
     venue: 'Online',
     address1: '',
